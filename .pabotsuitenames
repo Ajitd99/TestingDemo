@@ -1,0 +1,6 @@
+datasources:dd5ec7df1b49662173b3c4590fecf46ae8f4b5c2
+commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
+suitesfrom:no-suites-from-option
+file:b0960136b68e5dd99c0411755af110371f67ad8e
+--suite Suites.ART
+--suite Suites.POMLogin

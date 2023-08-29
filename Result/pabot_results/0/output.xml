@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230829 10:07:26.673" rpa="false" schemaversion="4">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="ART" source="C:\Users\User\PycharmProjects\TestAutomation\TestCases\ART.robot">
+<test id="s1-s1-t1" name="Test1" line="12">
+<kw name="open mybrowser" library="RK1">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230829 10:07:26.945" level="INFO">Opening browser 'chrome' to base url 'https://demo.automationtesting.in/Register.html'.</msg>
+<status status="PASS" starttime="20230829 10:07:26.944" endtime="20230829 10:07:31.950"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230829 10:07:31.951" endtime="20230829 10:07:32.072"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230829 10:07:32.073" endtime="20230829 10:07:32.074"/>
+</kw>
+<status status="PASS" starttime="20230829 10:07:26.944" endtime="20230829 10:07:32.074"/>
+</kw>
+<kw name="Enter Fname" library="RK1">
+<arg>Nilam</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${firsname}</arg>
+<arg>${fname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230829 10:07:32.076" level="INFO">Typing text 'Nilam' into text field 'xpath://body/section[@id='section']/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/input[1]'.</msg>
+<status status="PASS" starttime="20230829 10:07:32.075" endtime="20230829 10:07:32.260"/>
+</kw>
+<status status="PASS" starttime="20230829 10:07:32.074" endtime="20230829 10:07:32.261"/>
+</kw>
+<kw name="Enter Lname" library="RK1">
+<arg>Devkar</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${lastname}</arg>
+<arg>${lname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230829 10:07:32.261" level="INFO">Typing text 'Devkar' into text field 'xpath://body/section[@id='section']/div[1]/div[1]/div[2]/form[1]/div[1]/div[2]/input[1]'.</msg>
+<status status="PASS" starttime="20230829 10:07:32.261" endtime="20230829 10:07:32.368"/>
+</kw>
+<status status="PASS" starttime="20230829 10:07:32.261" endtime="20230829 10:07:32.369"/>
+</kw>
+<kw name="Enter Address" library="RK1">
+<arg>Mumbai, Thane, Wagel Estate, Happy homes, Room no. 2</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_address}</arg>
+<arg>${address}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230829 10:07:32.371" level="INFO">Typing text 'Mumbai, Thane, Wagel Estate, Happy homes, Room no. 2' into text field 'xpath://body/section[@id='section']/div[1]/div[1]/div[2]/form[1]/div[2]/div[1]/textarea[1]'.</msg>
+<status status="PASS" starttime="20230829 10:07:32.369" endtime="20230829 10:07:32.480"/>
+</kw>
+<status status="PASS" starttime="20230829 10:07:32.369" endtime="20230829 10:07:32.480"/>
+</kw>
+<kw name="Enter Email" library="RK1">
+<arg>nilamdevkar@gmail.com</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_email}</arg>
+<arg>${emailid}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230829 10:07:32.481" level="INFO">Typing text 'nilamdevkar@gmail.com' into text field 'xpath://body/section[@id='section']/div[1]/div[1]/div[2]/form[1]/div[3]/div[1]/input[1]'.</msg>
+<status status="PASS" starttime="20230829 10:07:32.480" endtime="20230829 10:07:32.565"/>
+</kw>
+<status status="PASS" starttime="20230829 10:07:32.480" endtime="20230829 10:07:32.565"/>
+</kw>
+<kw name="Enter Phone Number" library="RK1">
+<arg>8650498989</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_phone}</arg>
+<arg>${phone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230829 10:07:32.566" level="INFO">Typing text '8650498989' into text field 'xpath://body/section[@id='section']/div[1]/div[1]/div[2]/form[1]/div[4]/div[1]/input[1]'.</msg>
+<status status="PASS" starttime="20230829 10:07:32.566" endtime="20230829 10:07:32.689"/>
+</kw>
+<status status="PASS" starttime="20230829 10:07:32.565" endtime="20230829 10:07:32.689"/>
+</kw>
+<kw name="Select Gender" library="RK1">
+<arg>FeMale</arg>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>${sel_gender}</arg>
+<arg>${gender}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20230829 10:07:32.692" level="INFO">Selecting 'FeMale' from radio button 'radiooptions'.</msg>
+<status status="PASS" starttime="20230829 10:07:32.691" endtime="20230829 10:07:32.780"/>
+</kw>
+<status status="PASS" starttime="20230829 10:07:32.689" endtime="20230829 10:07:32.780"/>
+</kw>
+<kw name="Select hobbies" library="RK1">
+<arg>Movies</arg>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${chek_hobby}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230829 10:07:32.781" level="INFO">Selecting checkbox 'xpath://input[@id='checkbox2']'.</msg>
+<status status="PASS" starttime="20230829 10:07:32.781" endtime="20230829 10:07:32.864"/>
+</kw>
+<status status="PASS" starttime="20230829 10:07:32.780" endtime="20230829 10:07:32.865"/>
+</kw>
+<kw name="Select Skills" library="RK1">
+<arg>C++</arg>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>${sel_skills}</arg>
+<arg>${skills}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20230829 10:07:32.865" level="INFO">Selecting options from selection list 'xpath://body[1]/section[1]/div[1]/div[1]/div[2]/form[1]/div[8]/div[1]/select[1]' by label C++.</msg>
+<status status="PASS" starttime="20230829 10:07:32.865" endtime="20230829 10:07:32.958"/>
+</kw>
+<status status="PASS" starttime="20230829 10:07:32.865" endtime="20230829 10:07:32.959"/>
+</kw>
+<kw name="Select Country" library="RK1">
+<arg>India</arg>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>${sel_ctry}</arg>
+<arg>${country}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20230829 10:07:32.960" level="INFO">Selecting options from selection list 'xpath://body[1]/section[1]/div[1]/div[1]/div[2]/form[1]/div[10]/div[1]/select[1]' by label India.</msg>
+<status status="PASS" starttime="20230829 10:07:32.959" endtime="20230829 10:07:33.064"/>
+</kw>
+<status status="PASS" starttime="20230829 10:07:32.959" endtime="20230829 10:07:33.065"/>
+</kw>
+<kw name="Select Date Of Birth Year" library="RK1">
+<arg>1993</arg>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>${chose_year}</arg>
+<arg>${year}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20230829 10:07:33.066" level="INFO">Selecting options from selection list 'xpath://select[@id='yearbox']' by label 1993.</msg>
+<status status="PASS" starttime="20230829 10:07:33.065" endtime="20230829 10:07:33.166"/>
+</kw>
+<status status="PASS" starttime="20230829 10:07:33.065" endtime="20230829 10:07:33.167"/>
+</kw>
+<kw name="Select Date Of Birth Month" library="RK1">
+<arg>July</arg>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>${chose_month}</arg>
+<arg>${Month}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20230829 10:07:33.168" level="INFO">Selecting options from selection list 'xpath://body/section[@id='section']/div[1]/div[1]/div[2]/form[1]/div[11]/div[2]/select[1]' by label July.</msg>
+<status status="PASS" starttime="20230829 10:07:33.167" endtime="20230829 10:07:33.258"/>
+</kw>
+<status status="PASS" starttime="20230829 10:07:33.167" endtime="20230829 10:07:33.258"/>
+</kw>
+<kw name="Select Date Of Birth Day" library="RK1">
+<arg>5</arg>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>${chose_day}</arg>
+<arg>${Day}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20230829 10:07:33.260" level="INFO">Selecting options from selection list 'xpath://select[@id='daybox']' by label 5.</msg>
+<status status="PASS" starttime="20230829 10:07:33.259" endtime="20230829 10:07:33.344"/>
+</kw>
+<status status="PASS" starttime="20230829 10:07:33.259" endtime="20230829 10:07:33.345"/>
+</kw>
+<kw name="Enter Password" library="RK1">
+<arg>admin</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230829 10:07:33.345" level="INFO">Typing text 'admin' into text field 'xpath://input[@id='firstpassword']'.</msg>
+<status status="PASS" starttime="20230829 10:07:33.345" endtime="20230829 10:07:33.436"/>
+</kw>
+<status status="PASS" starttime="20230829 10:07:33.345" endtime="20230829 10:07:33.436"/>
+</kw>
+<kw name="Enter Confirm Password" library="RK1">
+<arg>admin</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_confpassword}</arg>
+<arg>${confirm}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230829 10:07:33.438" level="INFO">Typing text 'admin' into text field 'xpath://input[@id='secondpassword']'.</msg>
+<status status="PASS" starttime="20230829 10:07:33.437" endtime="20230829 10:07:33.538"/>
+</kw>
+<status status="PASS" starttime="20230829 10:07:33.436" endtime="20230829 10:07:33.540"/>
+</kw>
+<kw name="Submit Button" library="RK1">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${sub_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230829 10:07:33.541" level="INFO">Clicking button 'xpath://button[@id='submitbtn']'.</msg>
+<status status="PASS" starttime="20230829 10:07:33.540" endtime="20230829 10:07:33.674"/>
+</kw>
+<status status="PASS" starttime="20230829 10:07:33.540" endtime="20230829 10:07:33.674"/>
+</kw>
+<kw name="close mybrowser" library="RK1">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20230829 10:07:33.675" endtime="20230829 10:07:35.777"/>
+</kw>
+<status status="PASS" starttime="20230829 10:07:33.674" endtime="20230829 10:07:35.777"/>
+</kw>
+<status status="PASS" starttime="20230829 10:07:26.944" endtime="20230829 10:07:35.778"/>
+</test>
+<status status="PASS" starttime="20230829 10:07:26.698" endtime="20230829 10:07:35.778"/>
+</suite>
+<status status="PASS" starttime="20230829 10:07:26.680" endtime="20230829 10:07:35.780"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="ART">Suites.ART</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
