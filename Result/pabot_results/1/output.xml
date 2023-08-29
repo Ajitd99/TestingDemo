@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230829 10:07:26.670" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230829 11:34:18.210" rpa="false" schemaversion="4">
 <suite id="s1" name="Suites">
 <suite id="s1-s1" name="POMLogin" source="C:\Users\User\PycharmProjects\TestAutomation\TestCases\POMLogin.robot">
 <test id="s1-s1-t1" name="Login Test" line="12">
@@ -7,8 +7,8 @@
 <arg>${siteUrl}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230829 10:07:26.945" level="INFO">Opening browser 'chrome' to base url 'https://boxeswala.com/my-account/'.</msg>
-<status status="PASS" starttime="20230829 10:07:26.944" endtime="20230829 10:07:42.928"/>
+<msg timestamp="20230829 11:34:18.456" level="INFO">Opening browser 'chrome' to base url 'https://boxeswala.com/my-account/'.</msg>
+<status status="PASS" starttime="20230829 11:34:18.456" endtime="20230829 11:34:36.279"/>
 </kw>
 <kw name="Enter UserName" library="LoginKeywords">
 <arg>${user}</arg>
@@ -16,10 +16,10 @@
 <arg>${loginusername}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230829 10:07:42.930" level="INFO">Typing text 'NilamAjit2022@gmail.com' into text field 'name:username'.</msg>
-<status status="PASS" starttime="20230829 10:07:42.929" endtime="20230829 10:07:43.049"/>
+<msg timestamp="20230829 11:34:36.280" level="INFO">Typing text 'NilamAjit2022@gmail.com' into text field 'name:username'.</msg>
+<status status="PASS" starttime="20230829 11:34:36.280" endtime="20230829 11:34:36.394"/>
 </kw>
-<status status="PASS" starttime="20230829 10:07:42.929" endtime="20230829 10:07:43.049"/>
+<status status="PASS" starttime="20230829 11:34:36.279" endtime="20230829 11:34:36.394"/>
 </kw>
 <kw name="Enter Password" library="LoginKeywords">
 <arg>${psd}</arg>
@@ -27,47 +27,47 @@
 <arg>${loginpassword}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230829 10:07:43.051" level="INFO">Typing text 'Nil@aju2023' into text field 'name:password'.</msg>
-<status status="PASS" starttime="20230829 10:07:43.050" endtime="20230829 10:07:43.137"/>
+<msg timestamp="20230829 11:34:36.395" level="INFO">Typing text 'Nil@aju2023' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20230829 11:34:36.394" endtime="20230829 11:34:36.475"/>
 </kw>
-<status status="PASS" starttime="20230829 10:07:43.049" endtime="20230829 10:07:43.137"/>
+<status status="PASS" starttime="20230829 11:34:36.394" endtime="20230829 11:34:36.475"/>
 </kw>
 <kw name="Click login Button" library="LoginKeywords">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${loginbutton}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230829 10:07:43.138" level="INFO">Clicking button 'xpath://button[contains(text(),'Log in')]'.</msg>
-<status status="PASS" starttime="20230829 10:07:43.138" endtime="20230829 10:07:45.988"/>
+<msg timestamp="20230829 11:34:36.476" level="INFO">Clicking button 'xpath://button[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20230829 11:34:36.476" endtime="20230829 11:34:39.805"/>
 </kw>
-<status status="PASS" starttime="20230829 10:07:43.137" endtime="20230829 10:07:45.988"/>
+<status status="PASS" starttime="20230829 11:34:36.475" endtime="20230829 11:34:39.805"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230829 10:07:48.989" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230829 10:07:45.988" endtime="20230829 10:07:48.989"/>
+<msg timestamp="20230829 11:34:42.807" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230829 11:34:39.805" endtime="20230829 11:34:42.807"/>
 </kw>
 <kw name="Verify Sucessfully Login" library="LoginKeywords">
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>My account – Boxeswala</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20230829 10:07:49.005" level="INFO">Page title is 'My account – Boxeswala'.</msg>
-<status status="PASS" starttime="20230829 10:07:48.990" endtime="20230829 10:07:49.006"/>
+<msg timestamp="20230829 11:34:42.826" level="INFO">Page title is 'My account – Boxeswala'.</msg>
+<status status="PASS" starttime="20230829 11:34:42.808" endtime="20230829 11:34:42.826"/>
 </kw>
-<status status="PASS" starttime="20230829 10:07:48.989" endtime="20230829 10:07:49.006"/>
+<status status="PASS" starttime="20230829 11:34:42.807" endtime="20230829 11:34:42.827"/>
 </kw>
 <kw name="Close My Browsers" library="LoginKeywords">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20230829 10:07:49.006" endtime="20230829 10:07:55.210"/>
+<status status="PASS" starttime="20230829 11:34:42.827" endtime="20230829 11:34:49.011"/>
 </kw>
-<status status="PASS" starttime="20230829 10:07:49.006" endtime="20230829 10:07:55.210"/>
+<status status="PASS" starttime="20230829 11:34:42.827" endtime="20230829 11:34:49.011"/>
 </kw>
-<status status="PASS" starttime="20230829 10:07:26.944" endtime="20230829 10:07:55.210"/>
+<status status="PASS" starttime="20230829 11:34:18.455" endtime="20230829 11:34:49.012"/>
 </test>
-<status status="PASS" starttime="20230829 10:07:26.697" endtime="20230829 10:07:55.212"/>
+<status status="PASS" starttime="20230829 11:34:18.234" endtime="20230829 11:34:49.013"/>
 </suite>
-<status status="PASS" starttime="20230829 10:07:26.679" endtime="20230829 10:07:55.218"/>
+<status status="PASS" starttime="20230829 11:34:18.218" endtime="20230829 11:34:49.018"/>
 </suite>
 <statistics>
 <total>

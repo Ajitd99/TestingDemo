@@ -1,6 +1,5 @@
-datasources:dd5ec7df1b49662173b3c4590fecf46ae8f4b5c2
-commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
+datasources:df97cdb75a4819e90364b65f60c5eb27d406f028
+commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
 suitesfrom:no-suites-from-option
-file:b0960136b68e5dd99c0411755af110371f67ad8e
---suite Suites.ART
---suite Suites.POMLogin
+file:038116adce0280f901e40ba1e08f063611629d6d
+--suite Registration
