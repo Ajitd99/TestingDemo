@@ -9,7 +9,7 @@ ${url}          https://demo.automationtesting.in/Register.html
 
 
 *** Test Cases ***
-Test1
+TestPOM
 
          open mybrowser         ${url}          ${browser}
          Enter Fname            Nilam
