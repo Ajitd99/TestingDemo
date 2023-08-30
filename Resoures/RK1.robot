@@ -8,7 +8,7 @@ open mybrowser
   [Arguments]     ${url}      ${browser}
   open browser    ${url}      ${browser}
   maximize browser window
-  set selenium speed       1seconds
+  set selenium speed       0seconds
 
 Enter Fname
    [Arguments]    ${fname}
