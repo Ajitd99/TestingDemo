@@ -1,8 +1,8 @@
 #login Page Elements
 
-# loginusername="name:username"
-# loginpassword="name:password"
-# loginbutton="xpath://button[contains(text(),'Log in')]"
+loginusername="name:username"
+loginpassword="name:password"
+loginbutton="xpath://button[contains(text(),'Log in')]"
 
 
 #Registration Page Elements

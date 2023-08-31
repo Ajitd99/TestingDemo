@@ -1,5 +1,6 @@
 *** Settings ***
 Library     SeleniumLibrary
+Variables      ../PageObject/Locators.py
 
 *** Variables ***
 ${login URL}        https://boxeswala.com/my-account/

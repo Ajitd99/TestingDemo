@@ -2,14 +2,15 @@
 Library        SeleniumLibrary
 Variables      ../PageObject/Locators.py
 
+*** Variables ***
+${browser}      chrome
+${CMSURL}       https://cms-staging.oneyou.io/auth/login
+
 *** Keywords ***
-
-
 Open My Browser
-      [Arguments]       ${CMSURL}       ${browser}
       open browser      ${CMSURL}       ${browser}
       maximize browser window
-      set selenium speed        1seconds
+      set selenium speed        0seconds
 
 Enter Email
       [Arguments]     ${email}
@@ -21,6 +22,9 @@ Enter Password
 
 Click on Sign Button
       click button      ${submit_button}
+
+#Dashboard page should be visible
+          # Page Should Contain           Dashboard
 
 Close Browser
        close all browsers
