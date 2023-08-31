@@ -7,7 +7,9 @@ Library   SeleniumLibrary
 TestLoginApplication
 
       open browser      https://cms-staging.oneyou.io/auth/login   chrome
-     # input text        name:email        ajit.d@amazatic.com
-      #input text        name:password     123123
-     # click element     xpath://button[contains(text(),'Sign In')]
+      maximize browser window
+      set selenium speed    1seconds
+      input text        xpath://input[name='email']            mahesh.j+nike@amazatic.com
+      input text        xpath:(//input[@name='password'])[1]             1
+      click element     xpath://button[normalize-space()='Sign In']
       close browser

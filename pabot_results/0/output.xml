@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230831 12:36:36.625" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230831 12:38:45.661" rpa="false" schemaversion="4">
 <suite id="s1" name="Registration" source="C:\Users\User\PycharmProjects\TestAutomation\TestCases\Registration.robot">
 <test id="s1-t1" name="Registration Test" line="10">
 <kw name="Open My Browser" library="RegistrationKeywords">
@@ -9,19 +9,19 @@
 <arg>${SiteUrl}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230831 12:36:36.851" level="INFO">Opening browser 'chrome' to base url 'https://www.way2automation.com/way2auto_jquery/registration.php#load_box'.</msg>
-<status status="PASS" starttime="20230831 12:36:36.850" endtime="20230831 12:36:38.974"/>
+<msg timestamp="20230831 12:38:45.811" level="INFO">Opening browser 'chrome' to base url 'https://www.way2automation.com/way2auto_jquery/registration.php#load_box'.</msg>
+<status status="PASS" starttime="20230831 12:38:45.810" endtime="20230831 12:38:47.627"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230831 12:36:38.975" endtime="20230831 12:36:39.094"/>
+<status status="PASS" starttime="20230831 12:38:47.627" endtime="20230831 12:38:47.743"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20230831 12:36:39.094" endtime="20230831 12:36:39.095"/>
+<status status="PASS" starttime="20230831 12:38:47.743" endtime="20230831 12:38:47.743"/>
 </kw>
-<status status="PASS" starttime="20230831 12:36:36.850" endtime="20230831 12:36:39.095"/>
+<status status="PASS" starttime="20230831 12:38:45.810" endtime="20230831 12:38:47.743"/>
 </kw>
 <kw name="Enter First Name" library="RegistrationKeywords">
 <arg>Ajit</arg>
@@ -29,10 +29,10 @@
 <arg>${txt_firstname}</arg>
 <arg>${fname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230831 12:36:39.096" level="INFO">Typing text 'Ajit' into text field 'name:name'.</msg>
-<status status="PASS" starttime="20230831 12:36:39.095" endtime="20230831 12:36:39.185"/>
+<msg timestamp="20230831 12:38:47.744" level="INFO">Typing text 'Ajit' into text field 'name:name'.</msg>
+<status status="PASS" starttime="20230831 12:38:47.744" endtime="20230831 12:38:47.830"/>
 </kw>
-<status status="PASS" starttime="20230831 12:36:39.095" endtime="20230831 12:36:39.185"/>
+<status status="PASS" starttime="20230831 12:38:47.744" endtime="20230831 12:38:47.831"/>
 </kw>
 <kw name="Enter Last Name" library="RegistrationKeywords">
 <arg>Devkar</arg>
@@ -40,10 +40,10 @@
 <arg>${txt_lname}</arg>
 <arg>${lname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230831 12:36:39.186" level="INFO">Typing text 'Devkar' into text field 'xpath://body/section[@id='wrapper']/div[1]/div[1]/div[1]/form[1]/fieldset[1]/p[2]/input[1]'.</msg>
-<status status="PASS" starttime="20230831 12:36:39.186" endtime="20230831 12:36:39.256"/>
+<msg timestamp="20230831 12:38:47.831" level="INFO">Typing text 'Devkar' into text field 'xpath://body/section[@id='wrapper']/div[1]/div[1]/div[1]/form[1]/fieldset[1]/p[2]/input[1]'.</msg>
+<status status="PASS" starttime="20230831 12:38:47.831" endtime="20230831 12:38:47.900"/>
 </kw>
-<status status="PASS" starttime="20230831 12:36:39.185" endtime="20230831 12:36:39.256"/>
+<status status="PASS" starttime="20230831 12:38:47.831" endtime="20230831 12:38:47.900"/>
 </kw>
 <kw name="Select Country" library="RegistrationKeywords">
 <arg>India</arg>
@@ -51,10 +51,10 @@
 <arg>${sel_country}</arg>
 <arg>${country}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20230831 12:36:39.257" level="INFO">Selecting options from selection list '//body/section[@id='wrapper']/div[1]/div[1]/div[1]/form[1]/fieldset[4]/select[1]' by label India.</msg>
-<status status="PASS" starttime="20230831 12:36:39.257" endtime="20230831 12:36:39.298"/>
+<msg timestamp="20230831 12:38:47.901" level="INFO">Selecting options from selection list '//body/section[@id='wrapper']/div[1]/div[1]/div[1]/form[1]/fieldset[4]/select[1]' by label India.</msg>
+<status status="PASS" starttime="20230831 12:38:47.900" endtime="20230831 12:38:47.943"/>
 </kw>
-<status status="PASS" starttime="20230831 12:36:39.256" endtime="20230831 12:36:39.298"/>
+<status status="PASS" starttime="20230831 12:38:47.900" endtime="20230831 12:38:47.943"/>
 </kw>
 <kw name="Select Birth Date Month" library="RegistrationKeywords">
 <arg>1</arg>
@@ -62,10 +62,10 @@
 <arg>${sel_month}</arg>
 <arg>${sele_month}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20230831 12:36:39.299" level="INFO">Selecting options from selection list '//body[1]/section[1]/div[1]/div[1]/div[1]/form[1]/fieldset[5]/div[1]/select[1]' by label 1.</msg>
-<status status="PASS" starttime="20230831 12:36:39.298" endtime="20230831 12:36:39.362"/>
+<msg timestamp="20230831 12:38:47.944" level="INFO">Selecting options from selection list '//body[1]/section[1]/div[1]/div[1]/div[1]/form[1]/fieldset[5]/div[1]/select[1]' by label 1.</msg>
+<status status="PASS" starttime="20230831 12:38:47.944" endtime="20230831 12:38:48.005"/>
 </kw>
-<status status="PASS" starttime="20230831 12:36:39.298" endtime="20230831 12:36:39.362"/>
+<status status="PASS" starttime="20230831 12:38:47.944" endtime="20230831 12:38:48.005"/>
 </kw>
 <kw name="Select Birth Date Day" library="RegistrationKeywords">
 <arg>1</arg>
@@ -73,10 +73,10 @@
 <arg>${sel_Day}</arg>
 <arg>${sele_day}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20230831 12:36:39.364" level="INFO">Selecting options from selection list '//body[1]/section[1]/div[1]/div[1]/div[1]/form[1]/fieldset[5]/div[2]/select[1]' by label 1.</msg>
-<status status="PASS" starttime="20230831 12:36:39.363" endtime="20230831 12:36:39.420"/>
+<msg timestamp="20230831 12:38:48.006" level="INFO">Selecting options from selection list '//body[1]/section[1]/div[1]/div[1]/div[1]/form[1]/fieldset[5]/div[2]/select[1]' by label 1.</msg>
+<status status="PASS" starttime="20230831 12:38:48.005" endtime="20230831 12:38:48.065"/>
 </kw>
-<status status="PASS" starttime="20230831 12:36:39.363" endtime="20230831 12:36:39.420"/>
+<status status="PASS" starttime="20230831 12:38:48.005" endtime="20230831 12:38:48.065"/>
 </kw>
 <kw name="Select Birth Date year" library="RegistrationKeywords">
 <arg>2014</arg>
@@ -84,10 +84,10 @@
 <arg>${sel_year}</arg>
 <arg>${sele_year}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20230831 12:36:39.421" level="INFO">Selecting options from selection list '//body[1]/section[1]/div[1]/div[1]/div[1]/form[1]/fieldset[5]/div[3]/select[1]' by label 2014.</msg>
-<status status="PASS" starttime="20230831 12:36:39.420" endtime="20230831 12:36:39.482"/>
+<msg timestamp="20230831 12:38:48.066" level="INFO">Selecting options from selection list '//body[1]/section[1]/div[1]/div[1]/div[1]/form[1]/fieldset[5]/div[3]/select[1]' by label 2014.</msg>
+<status status="PASS" starttime="20230831 12:38:48.066" endtime="20230831 12:38:48.135"/>
 </kw>
-<status status="PASS" starttime="20230831 12:36:39.420" endtime="20230831 12:36:39.482"/>
+<status status="PASS" starttime="20230831 12:38:48.066" endtime="20230831 12:38:48.135"/>
 </kw>
 <kw name="Phone Number" library="RegistrationKeywords">
 <arg>9975405590</arg>
@@ -95,10 +95,10 @@
 <arg>${txt_phone1}</arg>
 <arg>${phoneno}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230831 12:36:39.483" level="INFO">Typing text '9975405590' into text field 'name:phone'.</msg>
-<status status="PASS" starttime="20230831 12:36:39.483" endtime="20230831 12:36:39.557"/>
+<msg timestamp="20230831 12:38:48.136" level="INFO">Typing text '9975405590' into text field 'name:phone'.</msg>
+<status status="PASS" starttime="20230831 12:38:48.136" endtime="20230831 12:38:48.213"/>
 </kw>
-<status status="PASS" starttime="20230831 12:36:39.482" endtime="20230831 12:36:39.557"/>
+<status status="PASS" starttime="20230831 12:38:48.135" endtime="20230831 12:38:48.213"/>
 </kw>
 <kw name="UserName" library="RegistrationKeywords">
 <arg>admin</arg>
@@ -106,10 +106,10 @@
 <arg>${txt_user}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230831 12:36:39.558" level="INFO">Typing text 'admin' into text field 'name:username'.</msg>
-<status status="PASS" starttime="20230831 12:36:39.557" endtime="20230831 12:36:39.622"/>
+<msg timestamp="20230831 12:38:48.214" level="INFO">Typing text 'admin' into text field 'name:username'.</msg>
+<status status="PASS" starttime="20230831 12:38:48.213" endtime="20230831 12:38:48.279"/>
 </kw>
-<status status="PASS" starttime="20230831 12:36:39.557" endtime="20230831 12:36:39.623"/>
+<status status="PASS" starttime="20230831 12:38:48.213" endtime="20230831 12:38:48.279"/>
 </kw>
 <kw name="Email" library="RegistrationKeywords">
 <arg>test123@gmail.com</arg>
@@ -117,10 +117,10 @@
 <arg>${txt_email1}</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230831 12:36:39.623" level="INFO">Typing text 'test123@gmail.com' into text field 'name:email'.</msg>
-<status status="PASS" starttime="20230831 12:36:39.623" endtime="20230831 12:36:39.695"/>
+<msg timestamp="20230831 12:38:48.280" level="INFO">Typing text 'test123@gmail.com' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20230831 12:38:48.280" endtime="20230831 12:38:48.353"/>
 </kw>
-<status status="PASS" starttime="20230831 12:36:39.623" endtime="20230831 12:36:39.695"/>
+<status status="PASS" starttime="20230831 12:38:48.280" endtime="20230831 12:38:48.353"/>
 </kw>
 <kw name="Password" library="RegistrationKeywords">
 <arg>admin123</arg>
@@ -128,10 +128,10 @@
 <arg>${txt_psd}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230831 12:36:39.696" level="INFO">Typing text 'admin123' into text field 'name:password'.</msg>
-<status status="PASS" starttime="20230831 12:36:39.696" endtime="20230831 12:36:39.766"/>
+<msg timestamp="20230831 12:38:48.354" level="INFO">Typing text 'admin123' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20230831 12:38:48.354" endtime="20230831 12:38:48.422"/>
 </kw>
-<status status="PASS" starttime="20230831 12:36:39.695" endtime="20230831 12:36:39.766"/>
+<status status="PASS" starttime="20230831 12:38:48.353" endtime="20230831 12:38:48.422"/>
 </kw>
 <kw name="Confirm Password" library="RegistrationKeywords">
 <arg>admin123</arg>
@@ -139,30 +139,30 @@
 <arg>${txt_cpsd}</arg>
 <arg>${conpsd}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230831 12:36:39.767" level="INFO">Typing text 'admin123' into text field 'name:c_password'.</msg>
-<status status="PASS" starttime="20230831 12:36:39.767" endtime="20230831 12:36:39.833"/>
+<msg timestamp="20230831 12:38:48.423" level="INFO">Typing text 'admin123' into text field 'name:c_password'.</msg>
+<status status="PASS" starttime="20230831 12:38:48.422" endtime="20230831 12:38:48.491"/>
 </kw>
-<status status="PASS" starttime="20230831 12:36:39.766" endtime="20230831 12:36:39.834"/>
+<status status="PASS" starttime="20230831 12:38:48.422" endtime="20230831 12:38:48.491"/>
 </kw>
 <kw name="Click Submit" library="RegistrationKeywords">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${submit_btn}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230831 12:36:39.834" level="INFO">Clicking button 'xpath://body/section[@id='wrapper']/div[1]/div[1]/div[1]/form[1]/fieldset[13]/input[1]'.</msg>
-<status status="PASS" starttime="20230831 12:36:39.834" endtime="20230831 12:36:39.898"/>
+<msg timestamp="20230831 12:38:48.492" level="INFO">Clicking button 'xpath://body/section[@id='wrapper']/div[1]/div[1]/div[1]/form[1]/fieldset[13]/input[1]'.</msg>
+<status status="PASS" starttime="20230831 12:38:48.491" endtime="20230831 12:38:48.553"/>
 </kw>
-<status status="PASS" starttime="20230831 12:36:39.834" endtime="20230831 12:36:39.898"/>
+<status status="PASS" starttime="20230831 12:38:48.491" endtime="20230831 12:38:48.553"/>
 </kw>
 <kw name="Close My Browser" library="RegistrationKeywords">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20230831 12:36:39.899" endtime="20230831 12:36:41.972"/>
+<status status="PASS" starttime="20230831 12:38:48.554" endtime="20230831 12:38:50.628"/>
 </kw>
-<status status="PASS" starttime="20230831 12:36:39.898" endtime="20230831 12:36:41.973"/>
+<status status="PASS" starttime="20230831 12:38:48.553" endtime="20230831 12:38:50.628"/>
 </kw>
-<status status="PASS" starttime="20230831 12:36:36.849" endtime="20230831 12:36:41.973"/>
+<status status="PASS" starttime="20230831 12:38:45.809" endtime="20230831 12:38:50.628"/>
 </test>
-<status status="PASS" starttime="20230831 12:36:36.632" endtime="20230831 12:36:41.974"/>
+<status status="PASS" starttime="20230831 12:38:45.670" endtime="20230831 12:38:50.629"/>
 </suite>
 <statistics>
 <total>
