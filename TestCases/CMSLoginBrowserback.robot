@@ -20,3 +20,5 @@ Valid Login
         Click on Sign Button
         sleep       3seconds
         Dashboard page should be visible
+        sleep       3seconds
+        Browse Back
