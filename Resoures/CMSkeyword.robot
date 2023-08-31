@@ -12,6 +12,9 @@ Open My Browser
       maximize browser window
       set selenium speed        0seconds
 
+Close Browser
+       close all browsers
+
 Enter Email
       [Arguments]     ${email}
       input text      ${txt_Username}      ${email}
@@ -23,11 +26,10 @@ Enter Password
 Click on Sign Button
       click button      ${submit_button}
 
-#Dashboard page should be visible
-          # Page Should Contain           Dashboard
+Dashboard page should be visible
+          Page Should Contain             Dashboard
 
-Close Browser
-       close all browsers
+
 
 
 
