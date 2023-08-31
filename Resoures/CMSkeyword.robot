@@ -5,6 +5,7 @@ Variables      ../PageObject/Locators.py
 *** Variables ***
 ${browser}      chrome
 ${CMSURL}       https://cms-staging.oneyou.io/auth/login
+${APP_URL}      https://cms-staging.oneyou.io/dashboard
 
 *** Keywords ***
 Open My Browser
@@ -12,7 +13,11 @@ Open My Browser
       maximize browser window
       set selenium speed        0seconds
 
-Close Browser
+Reopen Browser
+       Open Browser    ${APP_URL}    ${browser}
+       maximize browser window
+
+Close All Browser
        close all browsers
 
 Enter Email
@@ -29,8 +34,6 @@ Click on Sign Button
 Dashboard page should be visible
           Page Should Contain             Dashboard
 
-Browse Back
-    Go Back
 
 
 
