@@ -27,3 +27,9 @@ Graph Data
         sleep      5seconds
         Select 21 days Graph Data
         sleep      7seconds
+        Select 7 days Graph Data
+        sleep      7seconds
+        Select Mood
+        sleep      7seconds
+        Select Physical Activity
+        sleep      7seconds

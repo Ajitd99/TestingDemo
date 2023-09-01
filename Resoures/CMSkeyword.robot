@@ -85,3 +85,12 @@ Select stress Health
 
 Select 21 days Graph Data
        click element        ${sel_21daysdata}
+
+Select 7 days Graph Data
+       click element        ${sel_7daysdata}
+
+Select Mood
+      click element         ${sel_Mood}
+
+Select Physical Activity
+      click element         ${sel_Physical_Activity}
