@@ -75,3 +75,13 @@ Enter Confirm Password
 
 Confirm Password
       click button      ${sub_confirmpassword}
+
+#Graph View
+Select 14 days Graph Data
+       click element        ${sel_graph14}
+
+Select stress Health
+       click element        ${sel_Stress_Health}
+
+Select 21 days Graph Data
+       click element        ${sel_21daysdata}
