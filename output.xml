@@ -1,139 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230901 12:55:28.919" rpa="false" schemaversion="4">
-<suite id="s1" name="CMSLogoutBrowserback" source="C:\Users\User\PycharmProjects\TestAutomation\CMSTestCases\CMSLogoutBrowserback.robot">
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230901 14:12:10.510" rpa="false" schemaversion="4">
+<suite id="s1" name="ForgotPassword" source="C:\Users\User\PycharmProjects\TestAutomation\CMSTestCases\ForgotPassword.robot">
 <kw name="Open My Browser" library="CMSkeyword" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${CMSURL}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230901 12:55:29.989" level="INFO">Opening browser 'chrome' to base url 'https://cms-staging.oneyou.io/auth/login'.</msg>
-<status status="PASS" starttime="20230901 12:55:29.989" endtime="20230901 12:56:01.452"/>
+<msg timestamp="20230901 14:12:11.707" level="INFO">Opening browser 'chrome' to base url 'https://cms-staging.oneyou.io/auth/login'.</msg>
+<status status="PASS" starttime="20230901 14:12:11.707" endtime="20230901 14:12:21.190"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230901 12:56:01.452" endtime="20230901 12:56:01.577"/>
+<status status="PASS" starttime="20230901 14:12:21.190" endtime="20230901 14:12:21.307"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20230901 12:56:01.578" endtime="20230901 12:56:01.578"/>
+<status status="PASS" starttime="20230901 14:12:21.307" endtime="20230901 14:12:21.307"/>
 </kw>
-<status status="PASS" starttime="20230901 12:55:29.989" endtime="20230901 12:56:01.578"/>
+<status status="PASS" starttime="20230901 14:12:11.707" endtime="20230901 14:12:21.307"/>
 </kw>
-<test id="s1-t1" name="CMS Logout Test" line="10">
-<kw name="Logout">
-<arg>mahesh.j@amazatic.com</arg>
-<arg>OneYou@123</arg>
+<test id="s1-t1" name="Forgot Password Test" line="10">
+<kw name="ForgotPassword">
+<arg>ajit.d@amazatic.com</arg>
 <kw name="Sleep" library="BuiltIn">
 <arg>3seconds</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230901 12:56:04.579" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230901 12:56:01.578" endtime="20230901 12:56:04.579"/>
+<msg timestamp="20230901 14:12:24.307" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230901 14:12:21.307" endtime="20230901 14:12:24.307"/>
 </kw>
-<kw name="Enter Email" library="CMSkeyword">
-<arg>${email}</arg>
+<kw name="Click link on Forgot Password" library="CMSkeyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${forgot_password}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230901 14:12:24.307" level="INFO">Clicking element '//a[normalize-space()='I forgot my password']'.</msg>
+<status status="PASS" starttime="20230901 14:12:24.307" endtime="20230901 14:12:24.398"/>
+</kw>
+<status status="PASS" starttime="20230901 14:12:24.307" endtime="20230901 14:12:24.398"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230901 14:12:27.399" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230901 14:12:24.398" endtime="20230901 14:12:27.399"/>
+</kw>
+<kw name="Enter Your Email" library="CMSkeyword">
+<arg>${email1}</arg>
 <kw name="Input Text" library="SeleniumLibrary">
-<arg>${txt_Username}</arg>
-<arg>${email}</arg>
+<arg>${txt_recovryemail}</arg>
+<arg>${email1}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230901 12:56:04.582" level="INFO">Typing text 'mahesh.j@amazatic.com' into text field 'name:email'.</msg>
-<status status="PASS" starttime="20230901 12:56:04.582" endtime="20230901 12:56:04.747"/>
+<msg timestamp="20230901 14:12:27.401" level="INFO">Typing text 'ajit.d@amazatic.com' into text field '//input[@placeholder='Enter email']'.</msg>
+<status status="PASS" starttime="20230901 14:12:27.400" endtime="20230901 14:12:27.568"/>
 </kw>
-<status status="PASS" starttime="20230901 12:56:04.579" endtime="20230901 12:56:04.747"/>
+<status status="PASS" starttime="20230901 14:12:27.399" endtime="20230901 14:12:27.568"/>
 </kw>
-<kw name="Enter Password" library="CMSkeyword">
-<arg>${password}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${txt_password}</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230901 12:56:04.749" level="INFO">Typing text 'OneYou@123' into text field 'name:password'.</msg>
-<status status="PASS" starttime="20230901 12:56:04.749" endtime="20230901 12:56:04.893"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>3seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230901 14:12:30.568" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230901 14:12:27.568" endtime="20230901 14:12:30.568"/>
 </kw>
-<status status="PASS" starttime="20230901 12:56:04.749" endtime="20230901 12:56:04.893"/>
-</kw>
-<kw name="Click on Sign Button" library="CMSkeyword">
+<kw name="Send Email" library="CMSkeyword">
 <kw name="Click Button" library="SeleniumLibrary">
-<arg>${submit_button}</arg>
+<arg>${sub_sendemail}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230901 12:56:04.893" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
-<status status="PASS" starttime="20230901 12:56:04.893" endtime="20230901 12:56:05.017"/>
+<msg timestamp="20230901 14:12:30.568" level="INFO">Clicking button '//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20230901 14:12:30.568" endtime="20230901 14:12:30.635"/>
 </kw>
-<status status="PASS" starttime="20230901 12:56:04.893" endtime="20230901 12:56:05.017"/>
+<status status="PASS" starttime="20230901 14:12:30.568" endtime="20230901 14:12:30.635"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5seconds</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230901 12:56:10.017" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230901 12:56:05.017" endtime="20230901 12:56:10.017"/>
+<msg timestamp="20230901 14:12:35.636" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230901 14:12:30.636" endtime="20230901 14:12:35.636"/>
 </kw>
-<kw name="Dashboard page should be visible" library="CMSkeyword">
-<kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>Dashboard</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20230901 12:56:10.044" level="INFO">Current page contains text 'Dashboard'.</msg>
-<status status="PASS" starttime="20230901 12:56:10.017" endtime="20230901 12:56:10.044"/>
+<status status="PASS" starttime="20230901 14:12:21.307" endtime="20230901 14:12:35.636"/>
 </kw>
-<status status="PASS" starttime="20230901 12:56:10.017" endtime="20230901 12:56:10.044"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>xpath://h2[@class='pageTitle']</arg>
-<arg>timeout=10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230901 12:56:10.044" endtime="20230901 12:56:10.073"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2seconds</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230901 12:56:12.074" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230901 12:56:10.073" endtime="20230901 12:56:12.074"/>
-</kw>
-<kw name="Hover on logout section" library="CMSkeyword">
-<kw name="Mouse Over" library="SeleniumLibrary">
-<arg>${hover_logoout}</arg>
-<doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<msg timestamp="20230901 12:56:12.074" level="INFO">Simulating Mouse Over on element 'xpath://div[@class='sc-ihgnxF knIImG']'.</msg>
-<status status="PASS" starttime="20230901 12:56:12.074" endtime="20230901 12:56:12.354"/>
-</kw>
-<status status="PASS" starttime="20230901 12:56:12.074" endtime="20230901 12:56:12.354"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3seconds</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230901 12:56:15.355" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230901 12:56:12.354" endtime="20230901 12:56:15.355"/>
-</kw>
-<kw name="Logout Dashboard" library="CMSkeyword">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${logout_button}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230901 12:56:15.356" level="INFO">Clicking element '//a[@class='d-inline-block logoutLink']'.</msg>
-<status status="PASS" starttime="20230901 12:56:15.356" endtime="20230901 12:56:15.421"/>
-</kw>
-<status status="PASS" starttime="20230901 12:56:15.355" endtime="20230901 12:56:15.421"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3seconds</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230901 12:56:18.422" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230901 12:56:15.421" endtime="20230901 12:56:18.422"/>
-</kw>
-<kw name="Browse Back" library="CMSkeyword">
-<kw name="Go Back" library="SeleniumLibrary">
-<doc>Simulates the user clicking the back button on their browser.</doc>
-<status status="PASS" starttime="20230901 12:56:18.423" endtime="20230901 12:56:18.435"/>
-</kw>
-<status status="PASS" starttime="20230901 12:56:18.422" endtime="20230901 12:56:18.435"/>
-</kw>
-<status status="PASS" starttime="20230901 12:56:01.578" endtime="20230901 12:56:18.435"/>
-</kw>
-<status status="PASS" starttime="20230901 12:56:01.578" endtime="20230901 12:56:18.436"/>
+<status status="PASS" starttime="20230901 14:12:21.307" endtime="20230901 14:12:35.637"/>
 </test>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230901 12:56:18.437" endtime="20230901 12:56:20.590"/>
+<status status="PASS" starttime="20230901 14:12:35.637" endtime="20230901 14:12:37.794"/>
 </kw>
-<status status="PASS" starttime="20230901 12:55:28.919" endtime="20230901 12:56:20.590"/>
+<status status="PASS" starttime="20230901 14:12:10.510" endtime="20230901 14:12:37.794"/>
 </suite>
 <statistics>
 <total>
@@ -142,7 +93,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="CMSLogoutBrowserback">CMSLogoutBrowserback</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="ForgotPassword">ForgotPassword</stat>
 </suite>
 </statistics>
 <errors>

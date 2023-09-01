@@ -43,7 +43,12 @@ Hover on logout section
 Logout Dashboard
        click element      ${logout_button}
 
+Click link on Forgot Password
+       click element        ${forgot_password}
 
+Enter Your Email
+      [Arguments]      ${email1}
+       input text      ${txt_recovryemail}       ${email1}
 
-
-
+Send Email
+      click button      ${sub_sendemail}
