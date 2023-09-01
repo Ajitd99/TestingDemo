@@ -1,149 +1,223 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Rebot 6.1.1 (Python 3.11.4 on win32)" generated="20230901 09:23:01.941" rpa="false" schemaversion="4">
-<suite id="s1" name="Registration" source="C:\Users\User\PycharmProjects\TestAutomation\TestCases\Registration.robot">
-<test id="s1-t1" name="Registration Test" line="10">
-<kw name="Open My Browser" library="RegistrationKeywords">
-<arg>${SiteUrl}</arg>
-<arg>${Browser}</arg>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230901 09:39:19.908" rpa="false" schemaversion="4">
+<suite id="s1" name="CMS-InvalidLogin" source="C:\Users\User\PycharmProjects\TestAutomation\CMSTestCases\CMS-InvalidLogin.robot">
+<kw name="Open My Browser" library="CMSkeyword" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>${SiteUrl}</arg>
-<arg>${Browser}</arg>
+<arg>${CMSURL}</arg>
+<arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230901 09:22:52.925" level="INFO">Opening browser 'chrome' to base url 'https://www.way2automation.com/way2auto_jquery/registration.php#load_box'.</msg>
-<msg timestamp="20230901 09:22:54.129" level="WARN">The chromedriver version (114.0.5735.90) detected in PATH at C:\ProgramData\Jenkins\.jenkins\tools\chromedriver\chromedriver.exe might not be compatible with the detected chrome version (116.0.5845.141); currently, chromedriver 116.0.5845.96 is recommended for chrome 116.*, so it is advised to delete the driver in PATH and retry</msg>
-<msg timestamp="20230901 09:22:57.557" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg timestamp="20230901 09:22:57.557" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 116.0.5845.141 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
-Stacktrace:
-Backtrace:
-	GetHandleVerifier [0x0047A813+48355]
-	(No symbol) [0x0040C4B1]
-	(No symbol) [0x00315358]
-	(No symbol) [0x003361AC]
-	(No symbol) [0x00331EF3]
-	(No symbol) [0x00330579]
-	(No symbol) [0x00360C55]
-	(No symbol) [0x0036093C]
-	(No symbol) [0x0035A536]
-	(No symbol) [0x003382DC]
-	(No symbol) [0x003393DD]
-	GetHandleVerifier [0x006DAABD+2539405]
-	GetHandleVerifier [0x0071A78F+2800735]
-	GetHandleVerifier [0x0071456C+2775612]
-	GetHandleVerifier [0x005051E0+616112]
-	(No symbol) [0x00415F8C]
-	(No symbol) [0x00412328]
-	(No symbol) [0x0041240B]
-	(No symbol) [0x00404FF7]
-	BaseThreadInitThunk [0x75A07BA9+25]
-	RtlInitializeExceptionChain [0x779FB79B+107]
-	RtlClearBits [0x779FB71F+191]
-</msg>
-<status status="FAIL" starttime="20230901 09:22:52.925" endtime="20230901 09:22:57.557"/>
+<msg timestamp="20230901 09:39:23.380" level="INFO">Opening browser 'chrome' to base url 'https://cms-staging.oneyou.io/auth/login'.</msg>
+<status status="PASS" starttime="20230901 09:39:23.380" endtime="20230901 09:39:32.493"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" starttime="20230901 09:22:57.557" endtime="20230901 09:22:57.557"/>
+<status status="PASS" starttime="20230901 09:39:32.493" endtime="20230901 09:39:32.606"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="NOT RUN" starttime="20230901 09:22:57.557" endtime="20230901 09:22:57.557"/>
+<status status="PASS" starttime="20230901 09:39:32.606" endtime="20230901 09:39:32.606"/>
 </kw>
-<status status="FAIL" starttime="20230901 09:22:52.925" endtime="20230901 09:22:57.557"/>
+<status status="PASS" starttime="20230901 09:39:23.380" endtime="20230901 09:39:32.606"/>
 </kw>
-<kw name="Enter First Name" library="RegistrationKeywords">
-<arg>Ajit</arg>
-<status status="NOT RUN" starttime="20230901 09:22:57.572" endtime="20230901 09:22:57.572"/>
+<test id="s1-t1" name="CMS Test Using Invalide Login" line="10">
+<kw name="Invalide Login">
+<arg>ajitd99@gmail.com</arg>
+<arg>ajit#9999</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230901 09:39:35.606" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230901 09:39:32.606" endtime="20230901 09:39:35.606"/>
 </kw>
-<kw name="Enter Last Name" library="RegistrationKeywords">
-<arg>Devkar</arg>
-<status status="NOT RUN" starttime="20230901 09:22:57.572" endtime="20230901 09:22:57.572"/>
+<kw name="Enter Email" library="CMSkeyword">
+<arg>${email}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_Username}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230901 09:39:35.606" level="INFO">Typing text 'ajitd99@gmail.com' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20230901 09:39:35.606" endtime="20230901 09:39:35.749"/>
 </kw>
-<kw name="Select Country" library="RegistrationKeywords">
-<arg>India</arg>
-<status status="NOT RUN" starttime="20230901 09:22:57.573" endtime="20230901 09:22:57.573"/>
+<status status="PASS" starttime="20230901 09:39:35.606" endtime="20230901 09:39:35.749"/>
 </kw>
-<kw name="Select Birth Date Month" library="RegistrationKeywords">
-<arg>1</arg>
-<status status="NOT RUN" starttime="20230901 09:22:57.573" endtime="20230901 09:22:57.573"/>
+<kw name="Enter Password" library="CMSkeyword">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230901 09:39:35.749" level="INFO">Typing text 'ajit#9999' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20230901 09:39:35.749" endtime="20230901 09:39:35.829"/>
 </kw>
-<kw name="Select Birth Date Day" library="RegistrationKeywords">
-<arg>1</arg>
-<status status="NOT RUN" starttime="20230901 09:22:57.573" endtime="20230901 09:22:57.573"/>
+<status status="PASS" starttime="20230901 09:39:35.749" endtime="20230901 09:39:35.829"/>
 </kw>
-<kw name="Select Birth Date year" library="RegistrationKeywords">
-<arg>2014</arg>
-<status status="NOT RUN" starttime="20230901 09:22:57.573" endtime="20230901 09:22:57.573"/>
+<kw name="Click on Sign Button" library="CMSkeyword">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${submit_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230901 09:39:35.829" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<status status="PASS" starttime="20230901 09:39:35.829" endtime="20230901 09:39:35.895"/>
 </kw>
-<kw name="Phone Number" library="RegistrationKeywords">
-<arg>9975405590</arg>
-<status status="NOT RUN" starttime="20230901 09:22:57.573" endtime="20230901 09:22:57.573"/>
+<status status="PASS" starttime="20230901 09:39:35.829" endtime="20230901 09:39:35.895"/>
 </kw>
-<kw name="UserName" library="RegistrationKeywords">
-<arg>admin</arg>
-<status status="NOT RUN" starttime="20230901 09:22:57.573" endtime="20230901 09:22:57.573"/>
+<status status="PASS" starttime="20230901 09:39:32.606" endtime="20230901 09:39:35.895"/>
 </kw>
-<kw name="Email" library="RegistrationKeywords">
-<arg>test123@gmail.com</arg>
-<status status="NOT RUN" starttime="20230901 09:22:57.573" endtime="20230901 09:22:57.573"/>
-</kw>
-<kw name="Password" library="RegistrationKeywords">
-<arg>admin123</arg>
-<status status="NOT RUN" starttime="20230901 09:22:57.573" endtime="20230901 09:22:57.573"/>
-</kw>
-<kw name="Confirm Password" library="RegistrationKeywords">
-<arg>admin123</arg>
-<status status="NOT RUN" starttime="20230901 09:22:57.573" endtime="20230901 09:22:57.573"/>
-</kw>
-<kw name="Click Submit" library="RegistrationKeywords">
-<status status="NOT RUN" starttime="20230901 09:22:57.573" endtime="20230901 09:22:57.573"/>
-</kw>
-<kw name="Close My Browser" library="RegistrationKeywords">
-<status status="NOT RUN" starttime="20230901 09:22:57.573" endtime="20230901 09:22:57.573"/>
-</kw>
-<status status="FAIL" starttime="20230901 09:22:52.925" endtime="20230901 09:22:57.573">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 116.0.5845.141 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
-Stacktrace:
-Backtrace:
-	GetHandleVerifier [0x0047A813+48355]
-	(No symbol) [0x0040C4B1]
-	(No symbol) [0x00315358]
-	(No symbol) [0x003361AC]
-	(No symbol) [0x00331EF3]
-	(No symbol) [0x00330579]
-	(No symbol) [0x00360C55]
-	(No symbol) [0x0036093C]
-	(No symbol) [0x0035A536]
-	(No symbol) [0x003382DC]
-	(No symbol) [0x003393DD]
-	GetHandleVerifier [0x006DAABD+2539405]
-	GetHandleVerifier [0x0071A78F+2800735]
-	GetHandleVerifier [0x0071456C+2775612]
-	GetHandleVerifier [0x005051E0+616112]
-	(No symbol) [0x00415F8C]
-	(No symbol) [0x00412328]
-	(No symbol) [0x0041240B]
-	(No symbol) [0x00404FF7]
-	BaseThreadInitThunk [0x75A07BA9+25]
-	RtlInitializeExceptionChain [0x779FB79B+107]
-	RtlClearBits [0x779FB71F+191]
-</status>
+<status status="PASS" starttime="20230901 09:39:32.606" endtime="20230901 09:39:35.895"/>
 </test>
-<doc>[https://pabot.org/?ref=log|Pabot] result from 1 executions.</doc>
-<status status="FAIL" starttime="20230901 09:22:52.684" endtime="20230901 09:22:57.573"/>
+<test id="s1-t2" name="CMS Test Using Invalide Login" line="10">
+<kw name="Invalide Login">
+<arg>ajitd99@gmail.com</arg>
+<arg>1</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230901 09:39:38.896" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230901 09:39:35.895" endtime="20230901 09:39:38.896"/>
+</kw>
+<kw name="Enter Email" library="CMSkeyword">
+<arg>${email}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_Username}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230901 09:39:38.896" level="INFO">Typing text 'ajitd99@gmail.com' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20230901 09:39:38.896" endtime="20230901 09:39:39.001"/>
+</kw>
+<status status="PASS" starttime="20230901 09:39:38.896" endtime="20230901 09:39:39.001"/>
+</kw>
+<kw name="Enter Password" library="CMSkeyword">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230901 09:39:39.001" level="INFO">Typing text '1' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20230901 09:39:39.001" endtime="20230901 09:39:39.067"/>
+</kw>
+<status status="PASS" starttime="20230901 09:39:39.001" endtime="20230901 09:39:39.067"/>
+</kw>
+<kw name="Click on Sign Button" library="CMSkeyword">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${submit_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230901 09:39:39.067" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<status status="PASS" starttime="20230901 09:39:39.067" endtime="20230901 09:39:39.118"/>
+</kw>
+<status status="PASS" starttime="20230901 09:39:39.067" endtime="20230901 09:39:39.118"/>
+</kw>
+<status status="PASS" starttime="20230901 09:39:35.895" endtime="20230901 09:39:39.118"/>
+</kw>
+<status status="PASS" starttime="20230901 09:39:35.895" endtime="20230901 09:39:39.118"/>
+</test>
+<test id="s1-t3" name="CMS Test Using Invalide Login" line="10">
+<kw name="Invalide Login">
+<arg>mahesh.j+nike@amazatic.com</arg>
+<arg>ajit#9999</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230901 09:39:42.119" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230901 09:39:39.118" endtime="20230901 09:39:42.119"/>
+</kw>
+<kw name="Enter Email" library="CMSkeyword">
+<arg>${email}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_Username}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230901 09:39:42.119" level="INFO">Typing text 'mahesh.j+nike@amazatic.com' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20230901 09:39:42.119" endtime="20230901 09:39:42.222"/>
+</kw>
+<status status="PASS" starttime="20230901 09:39:42.119" endtime="20230901 09:39:42.222"/>
+</kw>
+<kw name="Enter Password" library="CMSkeyword">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230901 09:39:42.222" level="INFO">Typing text 'ajit#9999' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20230901 09:39:42.222" endtime="20230901 09:39:42.296"/>
+</kw>
+<status status="PASS" starttime="20230901 09:39:42.222" endtime="20230901 09:39:42.296"/>
+</kw>
+<kw name="Click on Sign Button" library="CMSkeyword">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${submit_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230901 09:39:42.296" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<status status="PASS" starttime="20230901 09:39:42.296" endtime="20230901 09:39:42.336"/>
+</kw>
+<status status="PASS" starttime="20230901 09:39:42.296" endtime="20230901 09:39:42.336"/>
+</kw>
+<status status="PASS" starttime="20230901 09:39:39.118" endtime="20230901 09:39:42.336"/>
+</kw>
+<status status="PASS" starttime="20230901 09:39:39.118" endtime="20230901 09:39:42.336"/>
+</test>
+<test id="s1-t4" name="CMS Test Using Invalide Login" line="10">
+<kw name="Invalide Login">
+<arg>mahesh.j+nike@amazatic.com</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230901 09:39:45.337" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230901 09:39:42.336" endtime="20230901 09:39:45.337"/>
+</kw>
+<kw name="Enter Email" library="CMSkeyword">
+<arg>${email}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_Username}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230901 09:39:45.337" level="INFO">Typing text 'mahesh.j+nike@amazatic.com' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20230901 09:39:45.337" endtime="20230901 09:39:45.434"/>
+</kw>
+<status status="PASS" starttime="20230901 09:39:45.337" endtime="20230901 09:39:45.434"/>
+</kw>
+<kw name="Enter Password" library="CMSkeyword">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230901 09:39:45.434" level="INFO">Typing text '' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20230901 09:39:45.434" endtime="20230901 09:39:45.494"/>
+</kw>
+<status status="PASS" starttime="20230901 09:39:45.434" endtime="20230901 09:39:45.494"/>
+</kw>
+<kw name="Click on Sign Button" library="CMSkeyword">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${submit_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230901 09:39:45.494" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<status status="PASS" starttime="20230901 09:39:45.494" endtime="20230901 09:39:45.534"/>
+</kw>
+<status status="PASS" starttime="20230901 09:39:45.494" endtime="20230901 09:39:45.534"/>
+</kw>
+<status status="PASS" starttime="20230901 09:39:42.336" endtime="20230901 09:39:45.534"/>
+</kw>
+<status status="PASS" starttime="20230901 09:39:42.336" endtime="20230901 09:39:45.534"/>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230901 09:39:45.534" endtime="20230901 09:39:47.648"/>
+</kw>
+<status status="PASS" starttime="20230901 09:39:19.924" endtime="20230901 09:39:47.648"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Registration">Registration</stat>
+<stat pass="4" fail="0" skip="0" id="s1" name="CMS-InvalidLogin">CMS-InvalidLogin</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20230901 09:22:54.129" level="WARN">The chromedriver version (114.0.5735.90) detected in PATH at C:\ProgramData\Jenkins\.jenkins\tools\chromedriver\chromedriver.exe might not be compatible with the detected chrome version (116.0.5845.141); currently, chromedriver 116.0.5845.96 is recommended for chrome 116.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20230901 09:39:35.895" level="WARN">Multiple tests with name 'CMS Test Using Invalide Login' executed in suite 'CMS-InvalidLogin'.</msg>
+<msg timestamp="20230901 09:39:39.118" level="WARN">Multiple tests with name 'CMS Test Using Invalide Login' executed in suite 'CMS-InvalidLogin'.</msg>
+<msg timestamp="20230901 09:39:42.336" level="WARN">Multiple tests with name 'CMS Test Using Invalide Login' executed in suite 'CMS-InvalidLogin'.</msg>
 </errors>
 </robot>
