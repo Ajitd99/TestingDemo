@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230831 12:38:45.661" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230901 09:22:52.674" rpa="false" schemaversion="4">
 <suite id="s1" name="Registration" source="C:\Users\User\PycharmProjects\TestAutomation\TestCases\Registration.robot">
 <test id="s1-t1" name="Registration Test" line="10">
 <kw name="Open My Browser" library="RegistrationKeywords">
@@ -9,171 +9,140 @@
 <arg>${SiteUrl}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230831 12:38:45.811" level="INFO">Opening browser 'chrome' to base url 'https://www.way2automation.com/way2auto_jquery/registration.php#load_box'.</msg>
-<status status="PASS" starttime="20230831 12:38:45.810" endtime="20230831 12:38:47.627"/>
+<msg timestamp="20230901 09:22:52.925" level="INFO">Opening browser 'chrome' to base url 'https://www.way2automation.com/way2auto_jquery/registration.php#load_box'.</msg>
+<msg timestamp="20230901 09:22:54.129" level="WARN">The chromedriver version (114.0.5735.90) detected in PATH at C:\ProgramData\Jenkins\.jenkins\tools\chromedriver\chromedriver.exe might not be compatible with the detected chrome version (116.0.5845.141); currently, chromedriver 116.0.5845.96 is recommended for chrome 116.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20230901 09:22:57.557" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230901 09:22:57.557" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 116.0.5845.141 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0047A813+48355]
+	(No symbol) [0x0040C4B1]
+	(No symbol) [0x00315358]
+	(No symbol) [0x003361AC]
+	(No symbol) [0x00331EF3]
+	(No symbol) [0x00330579]
+	(No symbol) [0x00360C55]
+	(No symbol) [0x0036093C]
+	(No symbol) [0x0035A536]
+	(No symbol) [0x003382DC]
+	(No symbol) [0x003393DD]
+	GetHandleVerifier [0x006DAABD+2539405]
+	GetHandleVerifier [0x0071A78F+2800735]
+	GetHandleVerifier [0x0071456C+2775612]
+	GetHandleVerifier [0x005051E0+616112]
+	(No symbol) [0x00415F8C]
+	(No symbol) [0x00412328]
+	(No symbol) [0x0041240B]
+	(No symbol) [0x00404FF7]
+	BaseThreadInitThunk [0x75A07BA9+25]
+	RtlInitializeExceptionChain [0x779FB79B+107]
+	RtlClearBits [0x779FB71F+191]
+</msg>
+<status status="FAIL" starttime="20230901 09:22:52.925" endtime="20230901 09:22:57.557"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230831 12:38:47.627" endtime="20230831 12:38:47.743"/>
+<status status="NOT RUN" starttime="20230901 09:22:57.557" endtime="20230901 09:22:57.557"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20230831 12:38:47.743" endtime="20230831 12:38:47.743"/>
+<status status="NOT RUN" starttime="20230901 09:22:57.557" endtime="20230901 09:22:57.557"/>
 </kw>
-<status status="PASS" starttime="20230831 12:38:45.810" endtime="20230831 12:38:47.743"/>
+<status status="FAIL" starttime="20230901 09:22:52.925" endtime="20230901 09:22:57.557"/>
 </kw>
 <kw name="Enter First Name" library="RegistrationKeywords">
 <arg>Ajit</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${txt_firstname}</arg>
-<arg>${fname}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230831 12:38:47.744" level="INFO">Typing text 'Ajit' into text field 'name:name'.</msg>
-<status status="PASS" starttime="20230831 12:38:47.744" endtime="20230831 12:38:47.830"/>
-</kw>
-<status status="PASS" starttime="20230831 12:38:47.744" endtime="20230831 12:38:47.831"/>
+<status status="NOT RUN" starttime="20230901 09:22:57.572" endtime="20230901 09:22:57.572"/>
 </kw>
 <kw name="Enter Last Name" library="RegistrationKeywords">
 <arg>Devkar</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${txt_lname}</arg>
-<arg>${lname}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230831 12:38:47.831" level="INFO">Typing text 'Devkar' into text field 'xpath://body/section[@id='wrapper']/div[1]/div[1]/div[1]/form[1]/fieldset[1]/p[2]/input[1]'.</msg>
-<status status="PASS" starttime="20230831 12:38:47.831" endtime="20230831 12:38:47.900"/>
-</kw>
-<status status="PASS" starttime="20230831 12:38:47.831" endtime="20230831 12:38:47.900"/>
+<status status="NOT RUN" starttime="20230901 09:22:57.572" endtime="20230901 09:22:57.572"/>
 </kw>
 <kw name="Select Country" library="RegistrationKeywords">
 <arg>India</arg>
-<kw name="Select From List By Label" library="SeleniumLibrary">
-<arg>${sel_country}</arg>
-<arg>${country}</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20230831 12:38:47.901" level="INFO">Selecting options from selection list '//body/section[@id='wrapper']/div[1]/div[1]/div[1]/form[1]/fieldset[4]/select[1]' by label India.</msg>
-<status status="PASS" starttime="20230831 12:38:47.900" endtime="20230831 12:38:47.943"/>
-</kw>
-<status status="PASS" starttime="20230831 12:38:47.900" endtime="20230831 12:38:47.943"/>
+<status status="NOT RUN" starttime="20230901 09:22:57.573" endtime="20230901 09:22:57.573"/>
 </kw>
 <kw name="Select Birth Date Month" library="RegistrationKeywords">
 <arg>1</arg>
-<kw name="Select From List By Label" library="SeleniumLibrary">
-<arg>${sel_month}</arg>
-<arg>${sele_month}</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20230831 12:38:47.944" level="INFO">Selecting options from selection list '//body[1]/section[1]/div[1]/div[1]/div[1]/form[1]/fieldset[5]/div[1]/select[1]' by label 1.</msg>
-<status status="PASS" starttime="20230831 12:38:47.944" endtime="20230831 12:38:48.005"/>
-</kw>
-<status status="PASS" starttime="20230831 12:38:47.944" endtime="20230831 12:38:48.005"/>
+<status status="NOT RUN" starttime="20230901 09:22:57.573" endtime="20230901 09:22:57.573"/>
 </kw>
 <kw name="Select Birth Date Day" library="RegistrationKeywords">
 <arg>1</arg>
-<kw name="Select From List By Label" library="SeleniumLibrary">
-<arg>${sel_Day}</arg>
-<arg>${sele_day}</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20230831 12:38:48.006" level="INFO">Selecting options from selection list '//body[1]/section[1]/div[1]/div[1]/div[1]/form[1]/fieldset[5]/div[2]/select[1]' by label 1.</msg>
-<status status="PASS" starttime="20230831 12:38:48.005" endtime="20230831 12:38:48.065"/>
-</kw>
-<status status="PASS" starttime="20230831 12:38:48.005" endtime="20230831 12:38:48.065"/>
+<status status="NOT RUN" starttime="20230901 09:22:57.573" endtime="20230901 09:22:57.573"/>
 </kw>
 <kw name="Select Birth Date year" library="RegistrationKeywords">
 <arg>2014</arg>
-<kw name="Select From List By Label" library="SeleniumLibrary">
-<arg>${sel_year}</arg>
-<arg>${sele_year}</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20230831 12:38:48.066" level="INFO">Selecting options from selection list '//body[1]/section[1]/div[1]/div[1]/div[1]/form[1]/fieldset[5]/div[3]/select[1]' by label 2014.</msg>
-<status status="PASS" starttime="20230831 12:38:48.066" endtime="20230831 12:38:48.135"/>
-</kw>
-<status status="PASS" starttime="20230831 12:38:48.066" endtime="20230831 12:38:48.135"/>
+<status status="NOT RUN" starttime="20230901 09:22:57.573" endtime="20230901 09:22:57.573"/>
 </kw>
 <kw name="Phone Number" library="RegistrationKeywords">
 <arg>9975405590</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${txt_phone1}</arg>
-<arg>${phoneno}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230831 12:38:48.136" level="INFO">Typing text '9975405590' into text field 'name:phone'.</msg>
-<status status="PASS" starttime="20230831 12:38:48.136" endtime="20230831 12:38:48.213"/>
-</kw>
-<status status="PASS" starttime="20230831 12:38:48.135" endtime="20230831 12:38:48.213"/>
+<status status="NOT RUN" starttime="20230901 09:22:57.573" endtime="20230901 09:22:57.573"/>
 </kw>
 <kw name="UserName" library="RegistrationKeywords">
 <arg>admin</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${txt_user}</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230831 12:38:48.214" level="INFO">Typing text 'admin' into text field 'name:username'.</msg>
-<status status="PASS" starttime="20230831 12:38:48.213" endtime="20230831 12:38:48.279"/>
-</kw>
-<status status="PASS" starttime="20230831 12:38:48.213" endtime="20230831 12:38:48.279"/>
+<status status="NOT RUN" starttime="20230901 09:22:57.573" endtime="20230901 09:22:57.573"/>
 </kw>
 <kw name="Email" library="RegistrationKeywords">
 <arg>test123@gmail.com</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${txt_email1}</arg>
-<arg>${email}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230831 12:38:48.280" level="INFO">Typing text 'test123@gmail.com' into text field 'name:email'.</msg>
-<status status="PASS" starttime="20230831 12:38:48.280" endtime="20230831 12:38:48.353"/>
-</kw>
-<status status="PASS" starttime="20230831 12:38:48.280" endtime="20230831 12:38:48.353"/>
+<status status="NOT RUN" starttime="20230901 09:22:57.573" endtime="20230901 09:22:57.573"/>
 </kw>
 <kw name="Password" library="RegistrationKeywords">
 <arg>admin123</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${txt_psd}</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230831 12:38:48.354" level="INFO">Typing text 'admin123' into text field 'name:password'.</msg>
-<status status="PASS" starttime="20230831 12:38:48.354" endtime="20230831 12:38:48.422"/>
-</kw>
-<status status="PASS" starttime="20230831 12:38:48.353" endtime="20230831 12:38:48.422"/>
+<status status="NOT RUN" starttime="20230901 09:22:57.573" endtime="20230901 09:22:57.573"/>
 </kw>
 <kw name="Confirm Password" library="RegistrationKeywords">
 <arg>admin123</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${txt_cpsd}</arg>
-<arg>${conpsd}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230831 12:38:48.423" level="INFO">Typing text 'admin123' into text field 'name:c_password'.</msg>
-<status status="PASS" starttime="20230831 12:38:48.422" endtime="20230831 12:38:48.491"/>
-</kw>
-<status status="PASS" starttime="20230831 12:38:48.422" endtime="20230831 12:38:48.491"/>
+<status status="NOT RUN" starttime="20230901 09:22:57.573" endtime="20230901 09:22:57.573"/>
 </kw>
 <kw name="Click Submit" library="RegistrationKeywords">
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>${submit_btn}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230831 12:38:48.492" level="INFO">Clicking button 'xpath://body/section[@id='wrapper']/div[1]/div[1]/div[1]/form[1]/fieldset[13]/input[1]'.</msg>
-<status status="PASS" starttime="20230831 12:38:48.491" endtime="20230831 12:38:48.553"/>
-</kw>
-<status status="PASS" starttime="20230831 12:38:48.491" endtime="20230831 12:38:48.553"/>
+<status status="NOT RUN" starttime="20230901 09:22:57.573" endtime="20230901 09:22:57.573"/>
 </kw>
 <kw name="Close My Browser" library="RegistrationKeywords">
-<kw name="Close All Browsers" library="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20230831 12:38:48.554" endtime="20230831 12:38:50.628"/>
+<status status="NOT RUN" starttime="20230901 09:22:57.573" endtime="20230901 09:22:57.573"/>
 </kw>
-<status status="PASS" starttime="20230831 12:38:48.553" endtime="20230831 12:38:50.628"/>
-</kw>
-<status status="PASS" starttime="20230831 12:38:45.809" endtime="20230831 12:38:50.628"/>
+<status status="FAIL" starttime="20230901 09:22:52.925" endtime="20230901 09:22:57.573">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 116.0.5845.141 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0047A813+48355]
+	(No symbol) [0x0040C4B1]
+	(No symbol) [0x00315358]
+	(No symbol) [0x003361AC]
+	(No symbol) [0x00331EF3]
+	(No symbol) [0x00330579]
+	(No symbol) [0x00360C55]
+	(No symbol) [0x0036093C]
+	(No symbol) [0x0035A536]
+	(No symbol) [0x003382DC]
+	(No symbol) [0x003393DD]
+	GetHandleVerifier [0x006DAABD+2539405]
+	GetHandleVerifier [0x0071A78F+2800735]
+	GetHandleVerifier [0x0071456C+2775612]
+	GetHandleVerifier [0x005051E0+616112]
+	(No symbol) [0x00415F8C]
+	(No symbol) [0x00412328]
+	(No symbol) [0x0041240B]
+	(No symbol) [0x00404FF7]
+	BaseThreadInitThunk [0x75A07BA9+25]
+	RtlInitializeExceptionChain [0x779FB79B+107]
+	RtlClearBits [0x779FB71F+191]
+</status>
 </test>
-<status status="PASS" starttime="20230831 12:38:45.670" endtime="20230831 12:38:50.629"/>
+<status status="FAIL" starttime="20230901 09:22:52.684" endtime="20230901 09:22:57.573"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Registration">Registration</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Registration">Registration</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20230901 09:22:54.129" level="WARN">The chromedriver version (114.0.5735.90) detected in PATH at C:\ProgramData\Jenkins\.jenkins\tools\chromedriver\chromedriver.exe might not be compatible with the detected chrome version (116.0.5845.141); currently, chromedriver 116.0.5845.96 is recommended for chrome 116.*, so it is advised to delete the driver in PATH and retry</msg>
 </errors>
 </robot>

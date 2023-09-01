@@ -1,9 +1,51 @@
 ==============================================================================
 Registration                                                                  
 ==============================================================================
-Registration Test                                                     | PASS |
+Registration Test                                                       
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\User\PycharmProjects\TestAutomation\TestCases\Registration.robot:10
+    T:  Registration Test    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\User\PycharmProjects\TestAutomation\TestCases\Registration.robot:12
+      Open My Browser    ${SiteUrl}    ${Browser}
+      |  ${SiteUrl} = https://www.way2automation.com/way2auto_jquery/registration.php#load_box (str)
+      |  ${Browser} = chrome (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\User\PycharmProjects\TestAutomation\Resoures\RegistrationKeywords.robot:9
+      Open Browser    ${SiteUrl}    ${Browser}
+      |  ${SiteUrl} = https://www.way2automation.com/way2auto_jquery/registration.php#load_box (str)
+      |  ${Browser} = chrome (str)
+______________________________________________________________________________
+| FAIL |
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 116.0.5845.141 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0047A813+48355]
+	(No symbol) [0x0040C4B1]
+	(No symbol) [0x00315358]
+	(No symbol) [0x003361AC]
+	(No symbol) [0x00331EF3]
+	(No symbol) [0x00330579]
+	(No symbol) [0x00360C55]
+	(No symbol) [0x0036093C]
+	(No symbol) [0x0035A536]
+	(No symbol) [0x003382DC]
+	(No symbol) [0x003393DD]
+	GetHandleVerifier [0x006DAABD+2539405]
+	GetHandleVerifier [0x0071A78F+2800735]
+	GetHandleVerifier [0x0071456C+2775612]
+	GetHandleVerifier [0x005051E0+616112]
+	(No symbol) [0x00415F8C]
+	(No symbol) [0x00412328]
+	(No symbol) [0x0041240B]
+	(No symbol) [0x00404FF7]
+	BaseThreadInitThunk [0x75A07BA9+25]
+	RtlInitializeExceptionChain [0x779FB79B+107]
+	RtlClearBits [0x779FB71F+191]
 ------------------------------------------------------------------------------
-Registration                                                          | PASS |
-1 test, 1 passed, 0 failed
+Registration                                                          | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
 Output:  C:\Users\User\PycharmProjects\TestAutomation\pabot_results\0\output.xml
