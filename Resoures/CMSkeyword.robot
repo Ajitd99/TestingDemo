@@ -37,7 +37,11 @@ Dashboard page should be visible
 Browse Back
         Go Back
 
+Hover on logout section
+     mouse over     ${hover_logoout}
 
+Logout Dashboard
+       click element      ${logout_button}
 
 
 
