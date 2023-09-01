@@ -52,3 +52,6 @@ Enter Your Email
 
 Send Email
       click button      ${sub_sendemail}
+
+Click To Login Link
+       click element     ${back_login}
