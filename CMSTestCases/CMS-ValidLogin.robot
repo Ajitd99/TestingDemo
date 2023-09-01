@@ -18,5 +18,5 @@ Valid Login
         Enter Email     ${email}
         Enter Password   ${password}
         Click on Sign Button
-        sleep       3seconds
+        sleep       5seconds
         Dashboard page should be visible

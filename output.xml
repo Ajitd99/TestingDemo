@@ -1,223 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230901 09:39:19.908" rpa="false" schemaversion="4">
-<suite id="s1" name="CMS-InvalidLogin" source="C:\Users\User\PycharmProjects\TestAutomation\CMSTestCases\CMS-InvalidLogin.robot">
-<kw name="Open My Browser" library="CMSkeyword" type="SETUP">
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230901 10:39:42.312" rpa="false" schemaversion="4">
+<suite id="s1" name="CMSLoginpagetext" source="C:\Users\User\PycharmProjects\TestAutomation\CMSTestCases\CMSLoginpagetext.robot">
+<test id="s1-t1" name="Verify Page Elements" line="11">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>${CMSURL}</arg>
-<arg>${browser}</arg>
+<arg>${LOGIN_PAGE_URL}</arg>
+<arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230901 09:39:23.380" level="INFO">Opening browser 'chrome' to base url 'https://cms-staging.oneyou.io/auth/login'.</msg>
-<status status="PASS" starttime="20230901 09:39:23.380" endtime="20230901 09:39:32.493"/>
+<msg timestamp="20230901 10:39:42.438" level="INFO">Opening browser 'chrome' to base url 'https://cms-staging.oneyou.io/auth/login'.</msg>
+<status status="PASS" starttime="20230901 10:39:42.438" endtime="20230901 10:39:54.052"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230901 09:39:32.493" endtime="20230901 09:39:32.606"/>
+<status status="PASS" starttime="20230901 10:39:54.052" endtime="20230901 10:39:54.181"/>
 </kw>
-<kw name="Set Selenium Speed" library="SeleniumLibrary">
-<arg>0seconds</arg>
-<doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20230901 09:39:32.606" endtime="20230901 09:39:32.606"/>
-</kw>
-<status status="PASS" starttime="20230901 09:39:23.380" endtime="20230901 09:39:32.606"/>
-</kw>
-<test id="s1-t1" name="CMS Test Using Invalide Login" line="10">
-<kw name="Invalide Login">
-<arg>ajitd99@gmail.com</arg>
-<arg>ajit#9999</arg>
 <kw name="Sleep" library="BuiltIn">
-<arg>3seconds</arg>
+<arg>4 seconds</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230901 09:39:35.606" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230901 09:39:32.606" endtime="20230901 09:39:35.606"/>
+<msg timestamp="20230901 10:39:58.184" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20230901 10:39:54.184" endtime="20230901 10:39:58.184"/>
 </kw>
-<kw name="Enter Email" library="CMSkeyword">
-<arg>${email}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${txt_Username}</arg>
-<arg>${email}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230901 09:39:35.606" level="INFO">Typing text 'ajitd99@gmail.com' into text field 'name:email'.</msg>
-<status status="PASS" starttime="20230901 09:39:35.606" endtime="20230901 09:39:35.749"/>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${heading_element_present}</var>
+<arg>Page Should Contain Element</arg>
+<arg>${PAGE_HEADING_ELEMENT}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${PAGE_HEADING_ELEMENT}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230901 10:39:58.200" level="INFO">Current page contains element 'xpath://img[@alt='logo']'.</msg>
+<status status="PASS" starttime="20230901 10:39:58.184" endtime="20230901 10:39:58.200"/>
 </kw>
-<status status="PASS" starttime="20230901 09:39:35.606" endtime="20230901 09:39:35.749"/>
+<msg timestamp="20230901 10:39:58.200" level="INFO">${heading_element_present} = True</msg>
+<status status="PASS" starttime="20230901 10:39:58.184" endtime="20230901 10:39:58.200"/>
 </kw>
-<kw name="Enter Password" library="CMSkeyword">
-<arg>${password}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${txt_password}</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230901 09:39:35.749" level="INFO">Typing text 'ajit#9999' into text field 'name:password'.</msg>
-<status status="PASS" starttime="20230901 09:39:35.749" endtime="20230901 09:39:35.829"/>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${text_element_present}</var>
+<arg>Page Should Contain Element</arg>
+<arg>${PAGE_TEXT_ELEMENT}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${PAGE_TEXT_ELEMENT}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230901 10:39:58.216" level="INFO">Current page contains element 'css:.blueHeading'.</msg>
+<status status="PASS" starttime="20230901 10:39:58.200" endtime="20230901 10:39:58.216"/>
 </kw>
-<status status="PASS" starttime="20230901 09:39:35.749" endtime="20230901 09:39:35.829"/>
+<msg timestamp="20230901 10:39:58.216" level="INFO">${text_element_present} = True</msg>
+<status status="PASS" starttime="20230901 10:39:58.200" endtime="20230901 10:39:58.216"/>
 </kw>
-<kw name="Click on Sign Button" library="CMSkeyword">
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>${submit_button}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230901 09:39:35.829" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
-<status status="PASS" starttime="20230901 09:39:35.829" endtime="20230901 09:39:35.895"/>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${heading_element_present}</arg>
+<arg>ELSE IF</arg>
+<arg>${heading_element_absent}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Else If" library="Reserved">
+<arg>${heading_element_absent}</arg>
+<msg timestamp="20230901 10:39:58.216" level="FAIL">'Else If' is a reserved keyword. It must be an upper case 'ELSE IF' and follow an opening 'IF' when used as a marker.</msg>
+<status status="FAIL" starttime="20230901 10:39:58.216" endtime="20230901 10:39:58.216"/>
 </kw>
-<status status="PASS" starttime="20230901 09:39:35.829" endtime="20230901 09:39:35.895"/>
+<status status="FAIL" starttime="20230901 10:39:58.216" endtime="20230901 10:39:58.216"/>
 </kw>
-<status status="PASS" starttime="20230901 09:39:32.606" endtime="20230901 09:39:35.895"/>
+<kw name="Log" library="BuiltIn">
+<arg>Page Heading Element Found on the Page</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20230901 10:39:58.216" endtime="20230901 10:39:58.216"/>
 </kw>
-<status status="PASS" starttime="20230901 09:39:32.606" endtime="20230901 09:39:35.895"/>
-</test>
-<test id="s1-t2" name="CMS Test Using Invalide Login" line="10">
-<kw name="Invalide Login">
-<arg>ajitd99@gmail.com</arg>
-<arg>1</arg>
-<kw name="Sleep" library="BuiltIn">
-<arg>3seconds</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230901 09:39:38.896" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230901 09:39:35.895" endtime="20230901 09:39:38.896"/>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${text_element_present}</arg>
+<arg>ELSE IF</arg>
+<arg>${text_element_absent}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" starttime="20230901 10:39:58.216" endtime="20230901 10:39:58.216"/>
 </kw>
-<kw name="Enter Email" library="CMSkeyword">
-<arg>${email}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${txt_Username}</arg>
-<arg>${email}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230901 09:39:38.896" level="INFO">Typing text 'ajitd99@gmail.com' into text field 'name:email'.</msg>
-<status status="PASS" starttime="20230901 09:39:38.896" endtime="20230901 09:39:39.001"/>
+<kw name="Log" library="BuiltIn">
+<arg>Page Text Element Found on the Page</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20230901 10:39:58.216" endtime="20230901 10:39:58.216"/>
 </kw>
-<status status="PASS" starttime="20230901 09:39:38.896" endtime="20230901 09:39:39.001"/>
-</kw>
-<kw name="Enter Password" library="CMSkeyword">
-<arg>${password}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${txt_password}</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230901 09:39:39.001" level="INFO">Typing text '1' into text field 'name:password'.</msg>
-<status status="PASS" starttime="20230901 09:39:39.001" endtime="20230901 09:39:39.067"/>
-</kw>
-<status status="PASS" starttime="20230901 09:39:39.001" endtime="20230901 09:39:39.067"/>
-</kw>
-<kw name="Click on Sign Button" library="CMSkeyword">
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>${submit_button}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230901 09:39:39.067" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
-<status status="PASS" starttime="20230901 09:39:39.067" endtime="20230901 09:39:39.118"/>
-</kw>
-<status status="PASS" starttime="20230901 09:39:39.067" endtime="20230901 09:39:39.118"/>
-</kw>
-<status status="PASS" starttime="20230901 09:39:35.895" endtime="20230901 09:39:39.118"/>
-</kw>
-<status status="PASS" starttime="20230901 09:39:35.895" endtime="20230901 09:39:39.118"/>
-</test>
-<test id="s1-t3" name="CMS Test Using Invalide Login" line="10">
-<kw name="Invalide Login">
-<arg>mahesh.j+nike@amazatic.com</arg>
-<arg>ajit#9999</arg>
-<kw name="Sleep" library="BuiltIn">
-<arg>3seconds</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230901 09:39:42.119" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230901 09:39:39.118" endtime="20230901 09:39:42.119"/>
-</kw>
-<kw name="Enter Email" library="CMSkeyword">
-<arg>${email}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${txt_Username}</arg>
-<arg>${email}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230901 09:39:42.119" level="INFO">Typing text 'mahesh.j+nike@amazatic.com' into text field 'name:email'.</msg>
-<status status="PASS" starttime="20230901 09:39:42.119" endtime="20230901 09:39:42.222"/>
-</kw>
-<status status="PASS" starttime="20230901 09:39:42.119" endtime="20230901 09:39:42.222"/>
-</kw>
-<kw name="Enter Password" library="CMSkeyword">
-<arg>${password}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${txt_password}</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230901 09:39:42.222" level="INFO">Typing text 'ajit#9999' into text field 'name:password'.</msg>
-<status status="PASS" starttime="20230901 09:39:42.222" endtime="20230901 09:39:42.296"/>
-</kw>
-<status status="PASS" starttime="20230901 09:39:42.222" endtime="20230901 09:39:42.296"/>
-</kw>
-<kw name="Click on Sign Button" library="CMSkeyword">
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>${submit_button}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230901 09:39:42.296" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
-<status status="PASS" starttime="20230901 09:39:42.296" endtime="20230901 09:39:42.336"/>
-</kw>
-<status status="PASS" starttime="20230901 09:39:42.296" endtime="20230901 09:39:42.336"/>
-</kw>
-<status status="PASS" starttime="20230901 09:39:39.118" endtime="20230901 09:39:42.336"/>
-</kw>
-<status status="PASS" starttime="20230901 09:39:39.118" endtime="20230901 09:39:42.336"/>
-</test>
-<test id="s1-t4" name="CMS Test Using Invalide Login" line="10">
-<kw name="Invalide Login">
-<arg>mahesh.j+nike@amazatic.com</arg>
-<kw name="Sleep" library="BuiltIn">
-<arg>3seconds</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230901 09:39:45.337" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230901 09:39:42.336" endtime="20230901 09:39:45.337"/>
-</kw>
-<kw name="Enter Email" library="CMSkeyword">
-<arg>${email}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${txt_Username}</arg>
-<arg>${email}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230901 09:39:45.337" level="INFO">Typing text 'mahesh.j+nike@amazatic.com' into text field 'name:email'.</msg>
-<status status="PASS" starttime="20230901 09:39:45.337" endtime="20230901 09:39:45.434"/>
-</kw>
-<status status="PASS" starttime="20230901 09:39:45.337" endtime="20230901 09:39:45.434"/>
-</kw>
-<kw name="Enter Password" library="CMSkeyword">
-<arg>${password}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${txt_password}</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230901 09:39:45.434" level="INFO">Typing text '' into text field 'name:password'.</msg>
-<status status="PASS" starttime="20230901 09:39:45.434" endtime="20230901 09:39:45.494"/>
-</kw>
-<status status="PASS" starttime="20230901 09:39:45.434" endtime="20230901 09:39:45.494"/>
-</kw>
-<kw name="Click on Sign Button" library="CMSkeyword">
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>${submit_button}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230901 09:39:45.494" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
-<status status="PASS" starttime="20230901 09:39:45.494" endtime="20230901 09:39:45.534"/>
-</kw>
-<status status="PASS" starttime="20230901 09:39:45.494" endtime="20230901 09:39:45.534"/>
-</kw>
-<status status="PASS" starttime="20230901 09:39:42.336" endtime="20230901 09:39:45.534"/>
-</kw>
-<status status="PASS" starttime="20230901 09:39:42.336" endtime="20230901 09:39:45.534"/>
-</test>
-<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230901 09:39:45.534" endtime="20230901 09:39:47.648"/>
+<status status="NOT RUN" starttime="20230901 10:39:58.216" endtime="20230901 10:39:58.216"/>
 </kw>
-<status status="PASS" starttime="20230901 09:39:19.924" endtime="20230901 09:39:47.648"/>
+<status status="FAIL" starttime="20230901 10:39:42.438" endtime="20230901 10:39:58.216">'Else If' is a reserved keyword. It must be an upper case 'ELSE IF' and follow an opening 'IF' when used as a marker.</status>
+</test>
+<status status="FAIL" starttime="20230901 10:39:42.312" endtime="20230901 10:39:58.216"/>
 </suite>
 <statistics>
 <total>
-<stat pass="4" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="4" fail="0" skip="0" id="s1" name="CMS-InvalidLogin">CMS-InvalidLogin</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="CMSLoginpagetext">CMSLoginpagetext</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20230901 09:39:35.895" level="WARN">Multiple tests with name 'CMS Test Using Invalide Login' executed in suite 'CMS-InvalidLogin'.</msg>
-<msg timestamp="20230901 09:39:39.118" level="WARN">Multiple tests with name 'CMS Test Using Invalide Login' executed in suite 'CMS-InvalidLogin'.</msg>
-<msg timestamp="20230901 09:39:42.336" level="WARN">Multiple tests with name 'CMS Test Using Invalide Login' executed in suite 'CMS-InvalidLogin'.</msg>
 </errors>
 </robot>

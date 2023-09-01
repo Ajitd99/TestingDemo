@@ -34,7 +34,8 @@ Click on Sign Button
 Dashboard page should be visible
           Page Should Contain             Dashboard
 
-
+Browse Back
+        Go Back
 
 
 
