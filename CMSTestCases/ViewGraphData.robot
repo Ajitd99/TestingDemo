@@ -32,4 +32,6 @@ Graph Data
         Select Mood
         sleep      7seconds
         Select Physical Activity
+        sleep      5seconds
+        Execute JavaScript      window.scrollTo(0, document.body.scrollHeight)
         sleep      7seconds
