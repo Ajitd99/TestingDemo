@@ -28,8 +28,9 @@ FileUpload
         Move Mouse fron people
         sleep       3seconds
         Click on Import
-        sleep       5seconds
-        Upload the File                 ../TestData/CMS-Login-Data.xlsx
+        sleep       3seconds
+        Upload the File                 C:\\Users\\User\\PycharmProjects\\TestAutomation\\sample.csv
+        #Choose File      xpath:         C:\\Users\\User\\PycharmProjects\\TestAutomation\\sample.csv
         sleep       5seconds
 
 

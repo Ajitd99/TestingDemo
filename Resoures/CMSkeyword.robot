@@ -130,5 +130,5 @@ Cancle to Upload File
        click element        ${cancel_file}
 
 Upload the File
-       [Arguments]       ${upload}
-       Choose File       ${upload_file}       ${upload}
+      [Arguments]       ${upload}
+      Choose File       ${upload_file}       ${upload}
