@@ -94,3 +94,41 @@ Select Mood
 
 Select Physical Activity
       click element         ${sel_Physical_Activity}
+
+# People Section
+Click on People section
+      click element         ${Sel_peoplesection}
+
+Select Checkbox Item
+      [Arguments]       ${item}
+      select checkbox    ${Sel_peoplecheckbox}
+
+Move Mouse fron people
+     mouse over     ${move_mousePeople}
+
+Select Search Bar
+      [Arguments]     ${search}
+      input text      ${sel_search}      ${search}
+
+Select Name
+      click element         ${sel_name}
+
+Click on Search Icon
+      click element         ${Click_searchicon}
+
+Select Search checkbox
+       [Arguments]           ${item1}
+       select checkbox       ${Select_checkbox}
+
+Close Search Icon
+      click element         ${Click_searchicon}
+
+Click on Import
+      click element         ${sel_import}
+
+Cancle to Upload File
+       click element        ${cancel_file}
+
+Upload the File
+       [Arguments]       ${upload}
+       Choose File       ${upload_file}       ${upload}
