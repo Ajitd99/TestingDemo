@@ -1,17 +1,17 @@
 *** Settings ***
 Library   SeleniumLibrary
-Library       DataDriver       ../TestData/CMS-Login-Data.xlsx      sheet_name=Sheet2
+Library       DataDriver       ../TestData/CMS-Login-Data.xlsx      sheet_name=Sheet7
 Resource      ../Resoures/CMSkeyword.robot
 Suite Setup         Open My Browser
 Suite Teardown      Close Browser
-Test Template       Logout
+Test Template       Staff CheckBox
 
 *** Test Cases ***
-CMS Logout Test
+Verify CheckBox
 
 
 *** Keywords ***
-Logout
+Staff CheckBox
 
         sleep       3seconds
         [Arguments]    ${email}       ${password}
@@ -21,10 +21,19 @@ Logout
         sleep       5seconds
         Dashboard page should be visible
         sleep       1seconds
-        Wait Until Element Is Visible        xpath://h2[@class='pageTitle']     timeout=10s
         Hover on logout section
         sleep       3seconds
-        Logout Dashboard
+        Click on Staff section
         sleep       3seconds
+        Move Mouse fron people
+        sleep       3seconds
+        Select Search Bar            NikeStaff2
+        sleep       5seconds
+
+
+
+
+
+
 
 

@@ -7,7 +7,7 @@ Suite Teardown      Close Browser
 Test Template       Graph Data
 
 *** Test Cases ***
-View Graph Data
+Verify Dashboard Progress Graph
 
 
 *** Keywords ***

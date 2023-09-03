@@ -4,14 +4,14 @@ Library       DataDriver       ../TestData/CMS-Login-Data.xlsx      sheet_name=S
 Resource      ../Resoures/CMSkeyword.robot
 Suite Setup         Open My Browser
 Suite Teardown      Close Browser
-Test Template       FileUpload
+Test Template       Report Section
 
 *** Test Cases ***
-Upload File
+Report Section Verify
 
 
 *** Keywords ***
-FileUpload
+Report Section
 
         sleep       3seconds
         [Arguments]    ${email}       ${password}
@@ -23,15 +23,15 @@ FileUpload
         sleep       1seconds
         Hover on logout section
         sleep       3seconds
-        Click on People section
+        Click on Report Section
         sleep       3seconds
         Move Mouse fron people
         sleep       3seconds
-        Click on Import
+        Execute JavaScript  window.scrollTo(0, document.body.scrollHeight)
         sleep       3seconds
-        Upload the File                 C:\\Users\\User\\PycharmProjects\\TestAutomation\\sample.csv
-        #Choose File      xpath:         C:\\Users\\User\\PycharmProjects\\TestAutomation\\sample.csv
-        sleep       5seconds
+        Execute JavaScript  window.scrollTo(0, -document.body.scrollHeight)
+        sleep       3seconds
+
 
 
 

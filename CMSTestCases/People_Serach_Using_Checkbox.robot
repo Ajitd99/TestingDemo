@@ -4,14 +4,14 @@ Library       DataDriver       ../TestData/CMS-Login-Data.xlsx      sheet_name=S
 Resource      ../Resoures/CMSkeyword.robot
 Suite Setup         Open My Browser
 Suite Teardown      Close Browser
-Test Template       PeopleSearch
+Test Template       People Search Using CheckBox
 
 *** Test Cases ***
-Search People
+Verify Search Box Using CheckBox
 
 
 *** Keywords ***
-PeopleSearch
+People Search Using CheckBox
 
         sleep       3seconds
         [Arguments]    ${email}       ${password}
@@ -29,7 +29,8 @@ PeopleSearch
         sleep       3seconds
         Click on Search Icon
         sleep       3seconds
-        Select Search checkbox               Last 30 days
+        #Select Search checkbox               Last 30 days
+        select checkbox        Xpath:(//input[@type='checkbox'])[1]
         sleep       5seconds
         Close Search Icon
         sleep       5seconds

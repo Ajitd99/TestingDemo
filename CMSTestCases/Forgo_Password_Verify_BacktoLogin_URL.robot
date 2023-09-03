@@ -7,7 +7,7 @@ Suite Teardown      Close Browser
 Test Template       ForgotPasswordBackToLogin
 
 *** Test Cases ***
-Forgot Password Back To Login Test
+Verify Back To Login URl Test
 
 
 *** Keywords ***

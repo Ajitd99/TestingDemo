@@ -76,7 +76,7 @@ Enter Confirm Password
 Confirm Password
       click button      ${sub_confirmpassword}
 
-#Graph View
+#Dashboard Section
 Select 14 days Graph Data
        click element        ${sel_graph14}
 
@@ -94,6 +94,12 @@ Select Mood
 
 Select Physical Activity
       click element         ${sel_Physical_Activity}
+
+Select Goal
+     click element          ${Sel_goal}
+
+Select Badges
+      click element         ${Sel_badges}
 
 # People Section
 Click on People section
@@ -132,3 +138,44 @@ Cancle to Upload File
 Upload the File
       [Arguments]       ${upload}
       Choose File       ${upload_file}       ${upload}
+
+#Staff Section
+Click on Staff section
+      click element         ${Staff_section}
+
+Select Search checkbox1
+       [Arguments]           ${item2}
+       select checkbox       ${Sel_checkbox1}
+
+Click to Add Staff
+       click element        ${Click_AddStaff}
+
+Enter Staff Name
+       [Arguments]       ${staffname}
+       input text        ${txt_addstaffName}       ${staffname}
+
+Enter Staff Email
+       [Arguments]       ${staffemail}
+       input text        ${text_staffemail}       ${staffemail}
+
+Select Cancel
+       click button       ${sel_cancel}
+
+Select Save
+       click button       ${sel_save}
+
+#Reports
+Click on Report Section
+     click element         ${click_Report}
+
+Select Days
+      [Arguments]      ${Dropreport}
+      select from list by label      ${Dropdown_report}     ${Dropreport}
+
+MouseOver on Number Of Users
+     mouse over     ${mouseover_noofuser}
+
+Select View
+      [Arguments]      ${view}
+      select from list by label      ${Sel_per_metrics}     ${view}
+

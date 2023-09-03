@@ -4,14 +4,14 @@ Library       DataDriver       ../TestData/CMS-Login-Data.xlsx      sheet_name=S
 Resource      ../Resoures/CMSkeyword.robot
 Suite Setup         Open My Browser
 Suite Teardown      Close Browser
-Test Template       Valid Login
+Test Template       Bedges
 
 *** Test Cases ***
-CMS Test Using Valid Login
+Verify Dashboard Section Bedges
 
 
 *** Keywords ***
-Valid Login
+Bedges
 
         sleep       3seconds
         [Arguments]    ${email}       ${password}
@@ -20,3 +20,8 @@ Valid Login
         Click on Sign Button
         sleep       5seconds
         Dashboard page should be visible
+        sleep       3seconds
+        Select Badges
+        sleep       5seconds
+
+

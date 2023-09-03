@@ -4,17 +4,18 @@ Library       DataDriver       ../TestData/CMS-Login-Data.xlsx      sheet_name=S
 Resource      ../Resoures/CMSkeyword.robot
 Suite Setup         Open Browser for Reset Password
 Suite Teardown      Close Browser
-Test Template       ResetPasswordoldlink
+Test Template       Reset Password old link
 
 *** Test Cases ***
-Reset Password Test Using old link
+Verify Reset Password Using old link
 
 
 *** Keywords ***
-ResetPasswordoldlink
+Reset Password old link
 
         sleep     5seconds
-        Page Should Contain        This link is Invalid!
+        Page Should Contain        This link is Expired!
+
 
 
 

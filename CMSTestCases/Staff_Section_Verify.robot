@@ -4,14 +4,14 @@ Library       DataDriver       ../TestData/CMS-Login-Data.xlsx      sheet_name=S
 Resource      ../Resoures/CMSkeyword.robot
 Suite Setup         Open My Browser
 Suite Teardown      Close Browser
-Test Template       PeopleSection
+Test Template       StaffSearch
 
 *** Test Cases ***
-Select People Section & Select Checkbox
+Search Staff
 
 
 *** Keywords ***
-PeopleSection
+StaffSearch
 
         sleep       3seconds
         [Arguments]    ${email}       ${password}
@@ -23,12 +23,18 @@ PeopleSection
         sleep       1seconds
         Hover on logout section
         sleep       3seconds
-        Click on People section
+        Click on Staff section
         sleep       3seconds
         Move Mouse fron people
-        sleep       3seconds
-        Select Checkbox Item        1
         sleep       5seconds
+
+
+
+
+
+
+
+
 
 
 

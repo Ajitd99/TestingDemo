@@ -4,14 +4,14 @@ Library       DataDriver       ../TestData/CMS-Login-Data.xlsx      sheet_name=S
 Resource      ../Resoures/CMSkeyword.robot
 Suite Setup         Open My Browser
 Suite Teardown      Close Browser
-Test Template       Logout
+Test Template       Valid Login
 
 *** Test Cases ***
-CMS Logout Test
+Verify CMS login Using Valid Input
 
 
 *** Keywords ***
-Logout
+Valid Login
 
         sleep       3seconds
         [Arguments]    ${email}       ${password}
@@ -20,11 +20,3 @@ Logout
         Click on Sign Button
         sleep       5seconds
         Dashboard page should be visible
-
-        Wait Until Element Is Visible        xpath://h2[@class='pageTitle']     timeout=10s
-        sleep       2seconds
-        Hover on logout section
-        sleep       3seconds
-        Logout Dashboard
-        sleep       3seconds
-        Browse Back

@@ -4,14 +4,14 @@ Library       DataDriver       ../TestData/CMS-Login-Data.xlsx      sheet_name=S
 Resource      ../Resoures/CMSkeyword.robot
 Suite Setup         Open My Browser
 Suite Teardown      Close Browser
-Test Template       FileUploadCancel
+Test Template       Performance Metrics
 
 *** Test Cases ***
-Import File
+Verify Performance Metrics
 
 
 *** Keywords ***
-FileUploadCancel
+Performance Metrics
 
         sleep       3seconds
         [Arguments]    ${email}       ${password}
@@ -23,14 +23,17 @@ FileUploadCancel
         sleep       1seconds
         Hover on logout section
         sleep       3seconds
-        Click on People section
+        Click on Report Section
         sleep       3seconds
         Move Mouse fron people
         sleep       3seconds
-        Click on Import
+        Execute JavaScript  window.scrollTo(0, document.body.scrollHeight)
+        sleep       5seconds
+        Select View               Individual View
         sleep       3seconds
-        Cancle to Upload File
-        sleep       3seconds
+
+
+
 
 
 
