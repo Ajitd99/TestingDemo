@@ -27,7 +27,7 @@ Select Report
         sleep      1seconds
         Move Mouse fron people
         sleep       3seconds
-        Select Days            days        Past 6 Weeks
+        Select Days                   Past 6 Weeks
         sleep       3seconds
 
 

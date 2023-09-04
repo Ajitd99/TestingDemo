@@ -28,7 +28,7 @@ Staff CheckBox
         Move Mouse fron people
         sleep       3seconds
         Select Search Bar            NikeStaff2
-        sleep       5seconds
+        sleep       8seconds
 
 
 
