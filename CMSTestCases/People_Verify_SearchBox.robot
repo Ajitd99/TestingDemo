@@ -28,7 +28,7 @@ People SearchBox
         Move Mouse fron people
         sleep       3seconds
         Select Search Bar            MaheshNike
-        sleep       3seconds
+        sleep       5seconds
         Select Name
         sleep      8seconds
 
