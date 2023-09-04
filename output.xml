@@ -1,169 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230904 13:27:43.173" rpa="false" schemaversion="4">
-<suite id="s1" name="Report Select Report Days" source="C:\Users\User\PycharmProjects\TestAutomation\CMSTestCases\Report_Select_Report_Days.robot">
-<kw name="Open My Browser" library="CMSkeyword" type="SETUP">
+<robot generator="Rebot 6.1.1 (Python 3.11.4 on win32)" generated="20230904 14:34:12.252" rpa="false" schemaversion="4">
+<suite id="s1" name="Registration" source="C:\Users\User\PycharmProjects\TestAutomation\TestCases\Registration.robot">
+<test id="s1-t1" name="Registration Test" line="10">
+<kw name="Open My Browser" library="RegistrationKeywords">
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>${CMSURL}</arg>
-<arg>${browser}</arg>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230904 13:27:43.871" level="INFO">Opening browser 'chrome' to base url 'https://cms-staging.oneyou.io/auth/login'.</msg>
-<status status="PASS" starttime="20230904 13:27:43.871" endtime="20230904 13:27:58.186"/>
+<msg timestamp="20230904 14:34:03.386" level="INFO">Opening browser 'chrome' to base url 'https://www.way2automation.com/way2auto_jquery/registration.php#load_box'.</msg>
+<msg timestamp="20230904 14:34:04.584" level="WARN">The chromedriver version (114.0.5735.90) detected in PATH at C:\ProgramData\Jenkins\.jenkins\tools\chromedriver\chromedriver.exe might not be compatible with the detected chrome version (116.0.5845.141); currently, chromedriver 116.0.5845.96 is recommended for chrome 116.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20230904 14:34:07.854" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230904 14:34:07.854" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 116.0.5845.141 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0102A813+48355]
+	(No symbol) [0x00FBC4B1]
+	(No symbol) [0x00EC5358]
+	(No symbol) [0x00EE61AC]
+	(No symbol) [0x00EE1EF3]
+	(No symbol) [0x00EE0579]
+	(No symbol) [0x00F10C55]
+	(No symbol) [0x00F1093C]
+	(No symbol) [0x00F0A536]
+	(No symbol) [0x00EE82DC]
+	(No symbol) [0x00EE93DD]
+	GetHandleVerifier [0x0128AABD+2539405]
+	GetHandleVerifier [0x012CA78F+2800735]
+	GetHandleVerifier [0x012C456C+2775612]
+	GetHandleVerifier [0x010B51E0+616112]
+	(No symbol) [0x00FC5F8C]
+	(No symbol) [0x00FC2328]
+	(No symbol) [0x00FC240B]
+	(No symbol) [0x00FB4FF7]
+	BaseThreadInitThunk [0x75A07BA9+25]
+	RtlInitializeExceptionChain [0x779FB79B+107]
+	RtlClearBits [0x779FB71F+191]
+</msg>
+<status status="FAIL" starttime="20230904 14:34:03.386" endtime="20230904 14:34:07.883"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230904 13:27:58.186" endtime="20230904 13:27:58.318"/>
+<status status="NOT RUN" starttime="20230904 14:34:07.883" endtime="20230904 14:34:07.883"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20230904 13:27:58.318" endtime="20230904 13:27:58.318"/>
+<status status="NOT RUN" starttime="20230904 14:34:07.883" endtime="20230904 14:34:07.884"/>
 </kw>
-<status status="PASS" starttime="20230904 13:27:43.871" endtime="20230904 13:27:58.318"/>
+<status status="FAIL" starttime="20230904 14:34:03.385" endtime="20230904 14:34:07.884"/>
 </kw>
-<test id="s1-t1" name="Select Report Days" line="10">
-<kw name="Select Report">
-<arg>mahesh.j+nike@amazatic.com</arg>
+<kw name="Enter First Name" library="RegistrationKeywords">
+<arg>Ajit</arg>
+<status status="NOT RUN" starttime="20230904 14:34:07.884" endtime="20230904 14:34:07.884"/>
+</kw>
+<kw name="Enter Last Name" library="RegistrationKeywords">
+<arg>Devkar</arg>
+<status status="NOT RUN" starttime="20230904 14:34:07.884" endtime="20230904 14:34:07.884"/>
+</kw>
+<kw name="Select Country" library="RegistrationKeywords">
+<arg>India</arg>
+<status status="NOT RUN" starttime="20230904 14:34:07.884" endtime="20230904 14:34:07.884"/>
+</kw>
+<kw name="Select Birth Date Month" library="RegistrationKeywords">
 <arg>1</arg>
-<kw name="Sleep" library="BuiltIn">
-<arg>3seconds</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230904 13:28:01.320" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230904 13:27:58.320" endtime="20230904 13:28:01.320"/>
+<status status="NOT RUN" starttime="20230904 14:34:07.884" endtime="20230904 14:34:07.884"/>
 </kw>
-<kw name="Enter Email" library="CMSkeyword">
-<arg>${email}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${txt_Username}</arg>
-<arg>${email}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230904 13:28:01.321" level="INFO">Typing text 'mahesh.j+nike@amazatic.com' into text field 'name:email'.</msg>
-<status status="PASS" starttime="20230904 13:28:01.320" endtime="20230904 13:28:01.445"/>
+<kw name="Select Birth Date Day" library="RegistrationKeywords">
+<arg>1</arg>
+<status status="NOT RUN" starttime="20230904 14:34:07.884" endtime="20230904 14:34:07.885"/>
 </kw>
-<status status="PASS" starttime="20230904 13:28:01.320" endtime="20230904 13:28:01.446"/>
+<kw name="Select Birth Date year" library="RegistrationKeywords">
+<arg>2014</arg>
+<status status="NOT RUN" starttime="20230904 14:34:07.885" endtime="20230904 14:34:07.885"/>
 </kw>
-<kw name="Enter Password" library="CMSkeyword">
-<arg>${password}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${txt_password}</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230904 13:28:01.446" level="INFO">Typing text '1' into text field 'name:password'.</msg>
-<status status="PASS" starttime="20230904 13:28:01.446" endtime="20230904 13:28:01.516"/>
+<kw name="Phone Number" library="RegistrationKeywords">
+<arg>9975405590</arg>
+<status status="NOT RUN" starttime="20230904 14:34:07.885" endtime="20230904 14:34:07.885"/>
 </kw>
-<status status="PASS" starttime="20230904 13:28:01.446" endtime="20230904 13:28:01.516"/>
+<kw name="UserName" library="RegistrationKeywords">
+<arg>admin</arg>
+<status status="NOT RUN" starttime="20230904 14:34:07.885" endtime="20230904 14:34:07.885"/>
 </kw>
-<kw name="Click on Sign Button" library="CMSkeyword">
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>${submit_button}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230904 13:28:01.517" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
-<status status="PASS" starttime="20230904 13:28:01.516" endtime="20230904 13:28:01.577"/>
+<kw name="Email" library="RegistrationKeywords">
+<arg>test123@gmail.com</arg>
+<status status="NOT RUN" starttime="20230904 14:34:07.885" endtime="20230904 14:34:07.885"/>
 </kw>
-<status status="PASS" starttime="20230904 13:28:01.516" endtime="20230904 13:28:01.577"/>
+<kw name="Password" library="RegistrationKeywords">
+<arg>admin123</arg>
+<status status="NOT RUN" starttime="20230904 14:34:07.885" endtime="20230904 14:34:07.885"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>5seconds</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230904 13:28:06.577" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230904 13:28:01.577" endtime="20230904 13:28:06.577"/>
+<kw name="Confirm Password" library="RegistrationKeywords">
+<arg>admin123</arg>
+<status status="NOT RUN" starttime="20230904 14:34:07.885" endtime="20230904 14:34:07.885"/>
 </kw>
-<kw name="Dashboard page should be visible" library="CMSkeyword">
-<kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>Dashboard</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20230904 13:28:06.591" level="INFO">Current page contains text 'Dashboard'.</msg>
-<status status="PASS" starttime="20230904 13:28:06.577" endtime="20230904 13:28:06.591"/>
+<kw name="Click Submit" library="RegistrationKeywords">
+<status status="NOT RUN" starttime="20230904 14:34:07.886" endtime="20230904 14:34:07.886"/>
 </kw>
-<status status="PASS" starttime="20230904 13:28:06.577" endtime="20230904 13:28:06.591"/>
+<kw name="Close My Browser" library="RegistrationKeywords">
+<status status="NOT RUN" starttime="20230904 14:34:07.886" endtime="20230904 14:34:07.886"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1seconds</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230904 13:28:07.591" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20230904 13:28:06.591" endtime="20230904 13:28:07.591"/>
-</kw>
-<kw name="Hover on logout section" library="CMSkeyword">
-<kw name="Mouse Over" library="SeleniumLibrary">
-<arg>${hover_logoout}</arg>
-<doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<msg timestamp="20230904 13:28:07.591" level="INFO">Simulating Mouse Over on element 'xpath://div[@class='sc-ihgnxF knIImG']'.</msg>
-<status status="PASS" starttime="20230904 13:28:07.591" endtime="20230904 13:28:07.874"/>
-</kw>
-<status status="PASS" starttime="20230904 13:28:07.591" endtime="20230904 13:28:07.874"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1seconds</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230904 13:28:08.874" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20230904 13:28:07.874" endtime="20230904 13:28:08.874"/>
-</kw>
-<kw name="Click on Report Section" library="CMSkeyword">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${click_Report}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230904 13:28:08.875" level="INFO">Clicking element '//span[normalize-space()='reports']'.</msg>
-<status status="PASS" starttime="20230904 13:28:08.874" endtime="20230904 13:28:08.954"/>
-</kw>
-<status status="PASS" starttime="20230904 13:28:08.874" endtime="20230904 13:28:08.955"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1seconds</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230904 13:28:09.955" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20230904 13:28:08.955" endtime="20230904 13:28:09.955"/>
-</kw>
-<kw name="Move Mouse fron people" library="CMSkeyword">
-<kw name="Mouse Over" library="SeleniumLibrary">
-<arg>${move_mousePeople}</arg>
-<doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<msg timestamp="20230904 13:28:09.956" level="INFO">Simulating Mouse Over on element '//div[@class='sc-kAyceB eAbRNa']'.</msg>
-<status status="PASS" starttime="20230904 13:28:09.955" endtime="20230904 13:28:10.252"/>
-</kw>
-<status status="PASS" starttime="20230904 13:28:09.955" endtime="20230904 13:28:10.252"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3seconds</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230904 13:28:13.254" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230904 13:28:10.252" endtime="20230904 13:28:13.254"/>
-</kw>
-<kw name="Select Days" library="CMSkeyword">
-<arg>Past 6 Weeks</arg>
-<kw name="Select From List By Label" library="SeleniumLibrary">
-<arg>${Dropdown_report}</arg>
-<arg>${Dropreport}</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20230904 13:28:13.254" level="INFO">Selecting options from selection list '//div[@class='col-sm-12 col-md-6 col-lg-6 dropDownDiv']//select[@id='days']' by label Past 6 Weeks.</msg>
-<status status="PASS" starttime="20230904 13:28:13.254" endtime="20230904 13:28:13.318"/>
-</kw>
-<status status="PASS" starttime="20230904 13:28:13.254" endtime="20230904 13:28:13.318"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3seconds</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230904 13:28:16.318" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230904 13:28:13.318" endtime="20230904 13:28:16.318"/>
-</kw>
-<status status="PASS" starttime="20230904 13:27:58.320" endtime="20230904 13:28:16.318"/>
-</kw>
-<status status="PASS" starttime="20230904 13:27:58.318" endtime="20230904 13:28:16.319"/>
+<status status="FAIL" starttime="20230904 14:34:03.385" endtime="20230904 14:34:07.886">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 116.0.5845.141 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0102A813+48355]
+	(No symbol) [0x00FBC4B1]
+	(No symbol) [0x00EC5358]
+	(No symbol) [0x00EE61AC]
+	(No symbol) [0x00EE1EF3]
+	(No symbol) [0x00EE0579]
+	(No symbol) [0x00F10C55]
+	(No symbol) [0x00F1093C]
+	(No symbol) [0x00F0A536]
+	(No symbol) [0x00EE82DC]
+	(No symbol) [0x00EE93DD]
+	GetHandleVerifier [0x0128AABD+2539405]
+	GetHandleVerifier [0x012CA78F+2800735]
+	GetHandleVerifier [0x012C456C+2775612]
+	GetHandleVerifier [0x010B51E0+616112]
+	(No symbol) [0x00FC5F8C]
+	(No symbol) [0x00FC2328]
+	(No symbol) [0x00FC240B]
+	(No symbol) [0x00FB4FF7]
+	BaseThreadInitThunk [0x75A07BA9+25]
+	RtlInitializeExceptionChain [0x779FB79B+107]
+	RtlClearBits [0x779FB71F+191]
+</status>
 </test>
-<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230904 13:28:16.319" endtime="20230904 13:28:18.444"/>
-</kw>
-<status status="PASS" starttime="20230904 13:27:43.174" endtime="20230904 13:28:18.444"/>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 1 executions.</doc>
+<status status="FAIL" starttime="20230904 14:34:02.905" endtime="20230904 14:34:07.887"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Report Select Report Days">Report Select Report Days</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Registration">Registration</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20230904 14:34:04.584" level="WARN">The chromedriver version (114.0.5735.90) detected in PATH at C:\ProgramData\Jenkins\.jenkins\tools\chromedriver\chromedriver.exe might not be compatible with the detected chrome version (116.0.5845.141); currently, chromedriver 116.0.5845.96 is recommended for chrome 116.*, so it is advised to delete the driver in PATH and retry</msg>
 </errors>
 </robot>
