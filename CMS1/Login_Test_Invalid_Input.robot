@@ -4,7 +4,7 @@ Resource     ../Resoures/CMSkeyword.robot
 Library       DataDriver       ../TestData/CMS-Login-Data.xlsx      sheet_name=Sheet1
 Test Setup         Open My Browser
 Test Teardown      Close Browser
-Test Template       Invalide Login
+Test Template      Invalide Login
 
 *** Test Cases ***
 Invalid Input Login Test

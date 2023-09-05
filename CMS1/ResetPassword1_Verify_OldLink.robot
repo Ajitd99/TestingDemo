@@ -4,7 +4,7 @@ Library       DataDriver       ../TestData/CMS-Login-Data.xlsx      sheet_name=S
 Resource      ../Resoures/CMSkeyword.robot
 Test Setup         Open Browser for Reset Password
 Test Teardown      Close Browser
-Test Template       Reset Password old link
+Test Template      Reset Password old link
 
 *** Test Cases ***
 Verify Reset Password Using old link

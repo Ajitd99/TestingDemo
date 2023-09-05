@@ -3,7 +3,7 @@ Library        SeleniumLibrary
 Variables      ../PageObject/Locators.py
 
 *** Variables ***
-${browser}      headlesschrome
+${browser}      chrome
 ${CMSURL}       https://cms-staging.oneyou.io/auth/login
 ${APP_URL}      https://cms-staging.oneyou.io/dashboard
 ${reserpassword}     https://cms-staging.oneyou.io/auth/reset-password?code=gAAAAABk8b_qZNlSSChX_-bf9Y9Y9gTQLri-X0ZZUeiU-4iwJTPBzEanbmm9seQWl1rFTzdqaTHY1-Uh1Dzi8a2D6ARA4jRL7I1kmMmZFkmwdXzQ7iDUEVnzNn6QS97NrrU_tS4-VknUkEs9E157mFWa3qEgKsmMIQVJThXw-oSdpw5KyTSDlKFha60II-pofwsOUJGchpps-m0FNIJmWCq-AkzVCNyONvjWd7W8qZwjI129gEiK_bgnuZfOhajaRqxwqbnS0jR3
@@ -119,6 +119,10 @@ Select Search Bar
       [Arguments]     ${search}
       input text      ${sel_search}      ${search}
 
+Clear Search Box
+#       [Arguments]       ${search}
+       Clear Element Text     ${sel_search}
+
 Select Name
       click element         ${sel_name}
 
@@ -182,3 +186,40 @@ Select View
       [Arguments]      ${view}
       select from list by label      ${Sel_per_metrics}     ${view}
 
+Page title is
+      [Arguments]          ${titlereport}
+      Element Should Contain     ${ele_reports}       ${titlereport}
+
+Graph title is
+      [Arguments]         ${titleAUF}
+      Element Should Contain     ${ele_auf}    ${titleAUF}
+
+Piechart title is
+      [Arguments]         ${piechart}
+      Element Should Contain     ${ele_piechart}    ${piechart}
+
+Table title is
+      [Arguments]         ${tabletitle}
+      Element Should Contain     ${ele_tabletitle}    ${tabletitle}
+
+
+Login the CMS
+        sleep       3seconds
+        Enter Email     mahesh.j+nike@amazatic.com
+        Enter Password   1
+        Click on Sign Button
+        sleep       5seconds
+        Dashboard page should be visible
+        sleep       1seconds
+        Hover on logout section
+        sleep       1seconds
+
+Login the Dashboard
+        sleep       3seconds
+        Enter Email     mahesh.j@amazatic.com
+        Enter Password   OneYou@123
+        Click on Sign Button
+        sleep       5seconds
+#        Element Should Contain      xpath://div[contains(text(),'Logged in Successfully!')]       Logged in Successfully!
+#        sleep       5seconds
+        Dashboard page should be visible
