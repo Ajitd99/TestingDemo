@@ -1,5 +1,28 @@
-datasources:df97cdb75a4819e90364b65f60c5eb27d406f028
-commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
+datasources:930c80ba9c8eb321b5d881d94a355a2e69a123b3
+commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
 suitesfrom:no-suites-from-option
-file:038116adce0280f901e40ba1e08f063611629d6d
---suite Registration
+file:140806de4029b6a5d800d40944357d7af3a113c3
+--suite Suites.Browserback Button Login
+--suite Suites.Dashboard Section Verify
+--suite Suites.Forgot Password
+--suite Suites.Forgot Password1 Verify BacktoLogin URL
+--suite Suites.Forgot Password2 Using NonRegistered Email
+--suite Suites.Invalid Input
+--suite Suites.Logout Test
+--suite Suites.People Serach Using Checkbox
+--suite Suites.People1 Verify Checkbox
+--suite Suites.People2 Verify Import and Cancel
+--suite Suites.People3 Verify Import uploadfile
+--suite Suites.People4 Verify SearchBox
+--suite Suites.Report Verify Searchbox
+--suite Suites.Report1 Verify NoOfUser
+--suite Suites.Report2 Select Report Days
+--suite Suites.Report3 Verify Performance Metrics
+--suite Suites.Reset Password
+--suite Suites.ResetPassword Verify DifferentPassword
+--suite Suites.ResetPassword1 Verify OldLink
+--suite Suites.Staff Add
+--suite Suites.Staff1 Save without any Info
+--suite Suites.Staff2 Select Checkbox
+--suite Suites.Staff3 Verify Searchbox
+--suite Suites.Valid Input

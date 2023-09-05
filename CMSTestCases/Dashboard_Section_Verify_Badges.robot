@@ -2,16 +2,16 @@
 Library   SeleniumLibrary
 Library       DataDriver       ../TestData/CMS-Login-Data.xlsx      sheet_name=Sheet2
 Resource      ../Resoures/CMSkeyword.robot
-Suite Setup         Open My Browser
-Suite Teardown      Close Browser
-Test Template       Bedges
+Test Setup         Open My Browser
+Test Teardown      Close Browser
+Test Template       Badges
 
 *** Test Cases ***
-Verify Dashboard Section Bedges
+Verify Dashboard Section Badges
 
 
 *** Keywords ***
-Bedges
+Badges
 
         sleep       3seconds
         [Arguments]    ${email}       ${password}

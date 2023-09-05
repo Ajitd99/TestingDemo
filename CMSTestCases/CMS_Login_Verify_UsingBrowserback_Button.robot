@@ -2,12 +2,12 @@
 Library   SeleniumLibrary
 Library       DataDriver       ../TestData/CMS-Login-Data.xlsx      sheet_name=Sheet2
 Resource      ../Resoures/CMSkeyword.robot
-Suite Setup         Open My Browser
-Suite Teardown      Close Browser
+Test Setup         Open My Browser
+Test Teardown      Close Browser
 Test Template       Browserback Button
 
 *** Test Cases ***
-Verify CMS Login Using Browserback Button
+2
 
 
 *** Keywords ***

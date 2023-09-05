@@ -1,148 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230904 14:34:02.897" rpa="false" schemaversion="4">
-<suite id="s1" name="Registration" source="C:\Users\User\PycharmProjects\TestAutomation\TestCases\Registration.robot">
-<test id="s1-t1" name="Registration Test" line="10">
-<kw name="Open My Browser" library="RegistrationKeywords">
-<arg>${SiteUrl}</arg>
-<arg>${Browser}</arg>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230905 15:25:30.247" rpa="false" schemaversion="4">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Browserback Button Login" source="C:\Users\User\PycharmProjects\TestAutomation\CMS1\Browserback_Button_Login.robot">
+<test id="s1-s1-t1" name="Verify login using Browserback Button" line="10">
+<kw name="Open My Browser" library="CMSkeyword" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>${SiteUrl}</arg>
-<arg>${Browser}</arg>
+<arg>${CMSURL}</arg>
+<arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230904 14:34:03.386" level="INFO">Opening browser 'chrome' to base url 'https://www.way2automation.com/way2auto_jquery/registration.php#load_box'.</msg>
-<msg timestamp="20230904 14:34:04.584" level="WARN">The chromedriver version (114.0.5735.90) detected in PATH at C:\ProgramData\Jenkins\.jenkins\tools\chromedriver\chromedriver.exe might not be compatible with the detected chrome version (116.0.5845.141); currently, chromedriver 116.0.5845.96 is recommended for chrome 116.*, so it is advised to delete the driver in PATH and retry</msg>
-<msg timestamp="20230904 14:34:07.854" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg timestamp="20230904 14:34:07.854" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 116.0.5845.141 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
-Stacktrace:
-Backtrace:
-	GetHandleVerifier [0x0102A813+48355]
-	(No symbol) [0x00FBC4B1]
-	(No symbol) [0x00EC5358]
-	(No symbol) [0x00EE61AC]
-	(No symbol) [0x00EE1EF3]
-	(No symbol) [0x00EE0579]
-	(No symbol) [0x00F10C55]
-	(No symbol) [0x00F1093C]
-	(No symbol) [0x00F0A536]
-	(No symbol) [0x00EE82DC]
-	(No symbol) [0x00EE93DD]
-	GetHandleVerifier [0x0128AABD+2539405]
-	GetHandleVerifier [0x012CA78F+2800735]
-	GetHandleVerifier [0x012C456C+2775612]
-	GetHandleVerifier [0x010B51E0+616112]
-	(No symbol) [0x00FC5F8C]
-	(No symbol) [0x00FC2328]
-	(No symbol) [0x00FC240B]
-	(No symbol) [0x00FB4FF7]
-	BaseThreadInitThunk [0x75A07BA9+25]
-	RtlInitializeExceptionChain [0x779FB79B+107]
-	RtlClearBits [0x779FB71F+191]
-</msg>
-<status status="FAIL" starttime="20230904 14:34:03.386" endtime="20230904 14:34:07.883"/>
+<msg timestamp="20230905 15:25:32.862" level="INFO">Opening browser 'headlesschrome' to base url 'https://cms-staging.oneyou.io/auth/login'.</msg>
+<status status="PASS" starttime="20230905 15:25:32.860" endtime="20230905 15:26:01.147"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" starttime="20230904 14:34:07.883" endtime="20230904 14:34:07.883"/>
+<status status="PASS" starttime="20230905 15:26:01.147" endtime="20230905 15:26:01.284"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="NOT RUN" starttime="20230904 14:34:07.883" endtime="20230904 14:34:07.884"/>
+<status status="PASS" starttime="20230905 15:26:01.288" endtime="20230905 15:26:01.288"/>
 </kw>
-<status status="FAIL" starttime="20230904 14:34:03.385" endtime="20230904 14:34:07.884"/>
+<status status="PASS" starttime="20230905 15:25:32.857" endtime="20230905 15:26:01.288"/>
 </kw>
-<kw name="Enter First Name" library="RegistrationKeywords">
-<arg>Ajit</arg>
-<status status="NOT RUN" starttime="20230904 14:34:07.884" endtime="20230904 14:34:07.884"/>
+<kw name="Browserback Button">
+<arg>mahesh.j@amazatic.com</arg>
+<arg>OneYou@123</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230905 15:26:04.289" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230905 15:26:01.288" endtime="20230905 15:26:04.289"/>
 </kw>
-<kw name="Enter Last Name" library="RegistrationKeywords">
-<arg>Devkar</arg>
-<status status="NOT RUN" starttime="20230904 14:34:07.884" endtime="20230904 14:34:07.884"/>
+<kw name="Enter Email" library="CMSkeyword">
+<arg>${email}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_Username}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230905 15:26:04.292" level="INFO">Typing text 'mahesh.j@amazatic.com' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20230905 15:26:04.291" endtime="20230905 15:26:04.602"/>
 </kw>
-<kw name="Select Country" library="RegistrationKeywords">
-<arg>India</arg>
-<status status="NOT RUN" starttime="20230904 14:34:07.884" endtime="20230904 14:34:07.884"/>
+<status status="PASS" starttime="20230905 15:26:04.290" endtime="20230905 15:26:04.602"/>
 </kw>
-<kw name="Select Birth Date Month" library="RegistrationKeywords">
-<arg>1</arg>
-<status status="NOT RUN" starttime="20230904 14:34:07.884" endtime="20230904 14:34:07.884"/>
+<kw name="Enter Password" library="CMSkeyword">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230905 15:26:04.609" level="INFO">Typing text 'OneYou@123' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20230905 15:26:04.602" endtime="20230905 15:26:04.839"/>
 </kw>
-<kw name="Select Birth Date Day" library="RegistrationKeywords">
-<arg>1</arg>
-<status status="NOT RUN" starttime="20230904 14:34:07.884" endtime="20230904 14:34:07.885"/>
+<status status="PASS" starttime="20230905 15:26:04.602" endtime="20230905 15:26:04.839"/>
 </kw>
-<kw name="Select Birth Date year" library="RegistrationKeywords">
-<arg>2014</arg>
-<status status="NOT RUN" starttime="20230904 14:34:07.885" endtime="20230904 14:34:07.885"/>
+<kw name="Click on Sign Button" library="CMSkeyword">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${submit_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230905 15:26:04.847" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<status status="PASS" starttime="20230905 15:26:04.845" endtime="20230905 15:26:05.018"/>
 </kw>
-<kw name="Phone Number" library="RegistrationKeywords">
-<arg>9975405590</arg>
-<status status="NOT RUN" starttime="20230904 14:34:07.885" endtime="20230904 14:34:07.885"/>
+<status status="PASS" starttime="20230905 15:26:04.839" endtime="20230905 15:26:05.018"/>
 </kw>
-<kw name="UserName" library="RegistrationKeywords">
-<arg>admin</arg>
-<status status="NOT RUN" starttime="20230904 14:34:07.885" endtime="20230904 14:34:07.885"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>3seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230905 15:26:08.020" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230905 15:26:05.018" endtime="20230905 15:26:08.020"/>
 </kw>
-<kw name="Email" library="RegistrationKeywords">
-<arg>test123@gmail.com</arg>
-<status status="NOT RUN" starttime="20230904 14:34:07.885" endtime="20230904 14:34:07.885"/>
+<kw name="Browse Back" library="CMSkeyword">
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230905 15:26:08.022" endtime="20230905 15:26:08.347"/>
 </kw>
-<kw name="Password" library="RegistrationKeywords">
-<arg>admin123</arg>
-<status status="NOT RUN" starttime="20230904 14:34:07.885" endtime="20230904 14:34:07.885"/>
+<status status="PASS" starttime="20230905 15:26:08.020" endtime="20230905 15:26:08.348"/>
 </kw>
-<kw name="Confirm Password" library="RegistrationKeywords">
-<arg>admin123</arg>
-<status status="NOT RUN" starttime="20230904 14:34:07.885" endtime="20230904 14:34:07.885"/>
+<status status="PASS" starttime="20230905 15:26:01.288" endtime="20230905 15:26:08.348"/>
 </kw>
-<kw name="Click Submit" library="RegistrationKeywords">
-<status status="NOT RUN" starttime="20230904 14:34:07.886" endtime="20230904 14:34:07.886"/>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230905 15:26:08.348" endtime="20230905 15:26:20.315"/>
 </kw>
-<kw name="Close My Browser" library="RegistrationKeywords">
-<status status="NOT RUN" starttime="20230904 14:34:07.886" endtime="20230904 14:34:07.886"/>
-</kw>
-<status status="FAIL" starttime="20230904 14:34:03.385" endtime="20230904 14:34:07.886">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 116.0.5845.141 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
-Stacktrace:
-Backtrace:
-	GetHandleVerifier [0x0102A813+48355]
-	(No symbol) [0x00FBC4B1]
-	(No symbol) [0x00EC5358]
-	(No symbol) [0x00EE61AC]
-	(No symbol) [0x00EE1EF3]
-	(No symbol) [0x00EE0579]
-	(No symbol) [0x00F10C55]
-	(No symbol) [0x00F1093C]
-	(No symbol) [0x00F0A536]
-	(No symbol) [0x00EE82DC]
-	(No symbol) [0x00EE93DD]
-	GetHandleVerifier [0x0128AABD+2539405]
-	GetHandleVerifier [0x012CA78F+2800735]
-	GetHandleVerifier [0x012C456C+2775612]
-	GetHandleVerifier [0x010B51E0+616112]
-	(No symbol) [0x00FC5F8C]
-	(No symbol) [0x00FC2328]
-	(No symbol) [0x00FC240B]
-	(No symbol) [0x00FB4FF7]
-	BaseThreadInitThunk [0x75A07BA9+25]
-	RtlInitializeExceptionChain [0x779FB79B+107]
-	RtlClearBits [0x779FB71F+191]
-</status>
+<status status="PASS" starttime="20230905 15:25:32.852" endtime="20230905 15:26:20.315"/>
 </test>
-<status status="FAIL" starttime="20230904 14:34:02.905" endtime="20230904 14:34:07.887"/>
+<status status="PASS" starttime="20230905 15:25:30.303" endtime="20230905 15:26:20.317"/>
+</suite>
+<status status="PASS" starttime="20230905 15:25:30.255" endtime="20230905 15:26:20.322"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Registration">Registration</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Browserback Button Login">Suites.Browserback Button Login</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20230904 14:34:04.584" level="WARN">The chromedriver version (114.0.5735.90) detected in PATH at C:\ProgramData\Jenkins\.jenkins\tools\chromedriver\chromedriver.exe might not be compatible with the detected chrome version (116.0.5845.141); currently, chromedriver 116.0.5845.96 is recommended for chrome 116.*, so it is advised to delete the driver in PATH and retry</msg>
 </errors>
 </robot>

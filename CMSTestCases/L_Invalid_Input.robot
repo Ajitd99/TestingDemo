@@ -2,12 +2,12 @@
 Library      SeleniumLibrary
 Resource     ../Resoures/CMSkeyword.robot
 Library       DataDriver       ../TestData/CMS-Login-Data.xlsx      sheet_name=Sheet1
-Suite Setup         Open My Browser
-Suite Teardown      Close Browser
+Test Setup         Open My Browser
+Test Teardown      Close Browser
 Test Template       Invalide Login
 
 *** Test Cases ***
-Verify CMS Login Using Invalide Input
+3
 
 *** Keywords ***
 Invalide Login
