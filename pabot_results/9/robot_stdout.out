@@ -1,14 +1,18 @@
 ==============================================================================
 Suites                                                                        
 ==============================================================================
-Suites.People2 Verify Import and Cancel                                       
+Suites.Verify Forgot Password                                                 
 ==============================================================================
-Verify Import And Cancel                                              | PASS |
+Verify Forgot Password                                                | PASS |
 ------------------------------------------------------------------------------
-Suites.People2 Verify Import and Cancel                               | PASS |
-1 test, 1 passed, 0 failed
+Verify Back To Login URl                                              | PASS |
+------------------------------------------------------------------------------
+Verify Forgot Password Using Non Registered Email                     | PASS |
+------------------------------------------------------------------------------
+Suites.Verify Forgot Password                                         | PASS |
+3 tests, 3 passed, 0 failed
 ==============================================================================
 Suites                                                                | PASS |
-1 test, 1 passed, 0 failed
+3 tests, 3 passed, 0 failed
 ==============================================================================
 Output:  C:\Users\User\PycharmProjects\TestAutomation\pabot_results\9\output.xml

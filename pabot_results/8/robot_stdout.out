@@ -1,14 +1,20 @@
 ==============================================================================
 Suites                                                                        
 ==============================================================================
-Suites.People1 Verify Checkbox                                                
+Suites.Staff Section Verify                                                   
 ==============================================================================
+Verify Search Box                                                     | PASS |
+------------------------------------------------------------------------------
 Verify Check Box                                                      | PASS |
 ------------------------------------------------------------------------------
-Suites.People1 Verify Checkbox                                        | PASS |
-1 test, 1 passed, 0 failed
+Verify Add Staff and Cancel                                           | PASS |
+------------------------------------------------------------------------------
+Veriry to save Staff without input                                    | PASS |
+------------------------------------------------------------------------------
+Suites.Staff Section Verify                                           | PASS |
+4 tests, 4 passed, 0 failed
 ==============================================================================
 Suites                                                                | PASS |
-1 test, 1 passed, 0 failed
+4 tests, 4 passed, 0 failed
 ==============================================================================
 Output:  C:\Users\User\PycharmProjects\TestAutomation\pabot_results\8\output.xml

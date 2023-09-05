@@ -1,14 +1,102 @@
 ==============================================================================
 Suites                                                                        
 ==============================================================================
-Suites.Browserback Button Login                                               
+Suites.Dashboard Section Verify                                               
 ==============================================================================
-Verify login using Browserback Button                                 | PASS |
+Verify Dashboard Section                                              | PASS |
 ------------------------------------------------------------------------------
-Suites.Browserback Button Login                                       | PASS |
-1 test, 1 passed, 0 failed
+Verify Badges                                                         | PASS |
+------------------------------------------------------------------------------
+Verify Progress Graph                                                   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\User\PycharmProjects\TestAutomation\CMS1\Dashboard_Section_Verify.robot:22
+    T:  Verify Progress Graph    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\User\PycharmProjects\TestAutomation\CMS1\Dashboard_Section_Verify.robot:23
+      Select 14 days Graph Data    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\User\PycharmProjects\TestAutomation\Resoures\CMSkeyword.robot:81
+      Click Element    ${sel_graph14}
+      |  ${sel_graph14} = css:body > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > section:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) (str)
+______________________________________________________________________________
+| FAIL |
+ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (364, 610)
+  (Session info: headless chrome=116.0.5845.141)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6595052A2+57122]
+	(No symbol) [0x00007FF65947EA92]
+	(No symbol) [0x00007FF65934E3AB]
+	(No symbol) [0x00007FF65938D783]
+	(No symbol) [0x00007FF65938BD5F]
+	(No symbol) [0x00007FF659389DC8]
+	(No symbol) [0x00007FF659388FD5]
+	(No symbol) [0x00007FF65937F25F]
+	(No symbol) [0x00007FF6593A6FDA]
+	(No symbol) [0x00007FF65937EB76]
+	(No symbol) [0x00007FF6593A71F0]
+	(No symbol) [0x00007FF6593BEB82]
+	(No symbol) [0x00007FF6593A6DB3]
+	(No symbol) [0x00007FF65937D2B1]
+	(No symbol) [0x00007FF65937E494]
+	GetHandleVerifier [0x00007FF6597AEF82+2849794]
+	GetHandleVerifier [0x00007FF659801D24+3189156]
+	GetHandleVerifier [0x00007FF6597FACAF+3160367]
+	GetHandleVerifier [0x00007FF659596D06+653702]
+	(No symbol) [0x00007FF65948A208]
+	(No symbol) [0x00007FF6594862C4]
+	(No symbol) [0x00007FF6594863F6]
+	(No symbol) [0x00007FF6594767A3]
+	BaseThreadInitThunk [0x00007FFBBC8F257D+29]
+	RtlUserThreadStart [0x00007FFBBE2CAA68+40]
+------------------------------------------------------------------------------
+Verify Goal Breakdown                                                   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\User\PycharmProjects\TestAutomation\CMS1\Dashboard_Section_Verify.robot:38
+    T:  Verify Goal Breakdown    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\User\PycharmProjects\TestAutomation\CMS1\Dashboard_Section_Verify.robot:39
+      Select Goal    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\User\PycharmProjects\TestAutomation\Resoures\CMSkeyword.robot:99
+      Click Element    ${Sel_goal}
+      |  ${Sel_goal} = css:body > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > section:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(3) (str)
+______________________________________________________________________________
+| FAIL |
+ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (467, 1112)
+  (Session info: headless chrome=116.0.5845.141)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6595052A2+57122]
+	(No symbol) [0x00007FF65947EA92]
+	(No symbol) [0x00007FF65934E3AB]
+	(No symbol) [0x00007FF65938D783]
+	(No symbol) [0x00007FF65938BD5F]
+	(No symbol) [0x00007FF659389DC8]
+	(No symbol) [0x00007FF659388FD5]
+	(No symbol) [0x00007FF65937F25F]
+	(No symbol) [0x00007FF6593A6FDA]
+	(No symbol) [0x00007FF65937EB76]
+	(No symbol) [0x00007FF6593A71F0]
+	(No symbol) [0x00007FF6593BEB82]
+	(No symbol) [0x00007FF6593A6DB3]
+	(No symbol) [0x00007FF65937D2B1]
+	(No symbol) [0x00007FF65937E494]
+	GetHandleVerifier [0x00007FF6597AEF82+2849794]
+	GetHandleVerifier [0x00007FF659801D24+3189156]
+	GetHandleVerifier [0x00007FF6597FACAF+3160367]
+	GetHandleVerifier [0x00007FF659596D06+653702]
+	(No symbol) [0x00007FF65948A208]
+	(No symbol) [0x00007FF6594862C4]
+	(No symbol) [0x00007FF6594863F6]
+	(No symbol) [0x00007FF6594767A3]
+	BaseThreadInitThunk [0x00007FFBBC8F257D+29]
+	RtlUserThreadStart [0x00007FFBBE2CAA68+40]
+------------------------------------------------------------------------------
+Suites.Dashboard Section Verify                                       | FAIL |
+4 tests, 2 passed, 2 failed
 ==============================================================================
-Suites                                                                | PASS |
-1 test, 1 passed, 0 failed
+Suites                                                                | FAIL |
+4 tests, 2 passed, 2 failed
 ==============================================================================
 Output:  C:\Users\User\PycharmProjects\TestAutomation\pabot_results\0\output.xml
