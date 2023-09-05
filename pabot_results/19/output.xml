@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230905 15:27:16.476" rpa="false" schemaversion="4">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Staff Add" source="C:\Users\User\PycharmProjects\TestAutomation\CMS1\Staff_Add.robot">
+<kw name="Open My Browser" library="CMSkeyword" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${CMSURL}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230905 15:27:17.380" level="INFO">Opening browser 'headlesschrome' to base url 'https://cms-staging.oneyou.io/auth/login'.</msg>
+<status status="PASS" starttime="20230905 15:27:17.380" endtime="20230905 15:27:45.822"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230905 15:27:45.824" endtime="20230905 15:27:45.966"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230905 15:27:45.966" endtime="20230905 15:27:45.966"/>
+</kw>
+<status status="PASS" starttime="20230905 15:27:17.380" endtime="20230905 15:27:45.966"/>
+</kw>
+<test id="s1-s1-t1" name="Verify Staff Add" line="10">
+<kw name="Staff Add">
+<arg>mahesh.j+nike@amazatic.com</arg>
+<arg>1</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230905 15:27:48.974" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230905 15:27:45.974" endtime="20230905 15:27:48.974"/>
+</kw>
+<kw name="Enter Email" library="CMSkeyword">
+<arg>${email}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_Username}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230905 15:27:48.976" level="INFO">Typing text 'mahesh.j+nike@amazatic.com' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20230905 15:27:48.974" endtime="20230905 15:27:49.334"/>
+</kw>
+<status status="PASS" starttime="20230905 15:27:48.974" endtime="20230905 15:27:49.334"/>
+</kw>
+<kw name="Enter Password" library="CMSkeyword">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230905 15:27:49.337" level="INFO">Typing text '1' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20230905 15:27:49.337" endtime="20230905 15:27:49.535"/>
+</kw>
+<status status="PASS" starttime="20230905 15:27:49.334" endtime="20230905 15:27:49.535"/>
+</kw>
+<kw name="Click on Sign Button" library="CMSkeyword">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${submit_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230905 15:27:49.542" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<status status="PASS" starttime="20230905 15:27:49.541" endtime="20230905 15:27:49.718"/>
+</kw>
+<status status="PASS" starttime="20230905 15:27:49.535" endtime="20230905 15:27:49.718"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230905 15:27:54.718" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230905 15:27:49.718" endtime="20230905 15:27:54.718"/>
+</kw>
+<kw name="Dashboard page should be visible" library="CMSkeyword">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Dashboard</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230905 15:27:54.753" level="INFO">Current page contains text 'Dashboard'.</msg>
+<status status="PASS" starttime="20230905 15:27:54.719" endtime="20230905 15:27:54.757"/>
+</kw>
+<status status="PASS" starttime="20230905 15:27:54.719" endtime="20230905 15:27:54.757"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230905 15:27:55.758" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230905 15:27:54.757" endtime="20230905 15:27:55.758"/>
+</kw>
+<kw name="Hover on logout section" library="CMSkeyword">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${hover_logoout}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20230905 15:27:55.760" level="INFO">Simulating Mouse Over on element 'xpath://div[@class='sc-ihgnxF knIImG']'.</msg>
+<status status="PASS" starttime="20230905 15:27:55.759" endtime="20230905 15:27:56.063"/>
+</kw>
+<status status="PASS" starttime="20230905 15:27:55.758" endtime="20230905 15:27:56.063"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230905 15:27:59.066" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230905 15:27:56.066" endtime="20230905 15:27:59.066"/>
+</kw>
+<kw name="Click on Staff section" library="CMSkeyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Staff_section}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230905 15:27:59.069" level="INFO">Clicking element '//a[@href='/staff']'.</msg>
+<status status="PASS" starttime="20230905 15:27:59.066" endtime="20230905 15:27:59.209"/>
+</kw>
+<status status="PASS" starttime="20230905 15:27:59.066" endtime="20230905 15:27:59.209"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230905 15:28:02.214" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230905 15:27:59.209" endtime="20230905 15:28:02.214"/>
+</kw>
+<kw name="Move Mouse fron people" library="CMSkeyword">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${move_mousePeople}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20230905 15:28:02.216" level="INFO">Simulating Mouse Over on element '//div[@class='sc-kAyceB eAbRNa']'.</msg>
+<status status="PASS" starttime="20230905 15:28:02.216" endtime="20230905 15:28:02.513"/>
+</kw>
+<status status="PASS" starttime="20230905 15:28:02.214" endtime="20230905 15:28:02.513"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230905 15:28:05.516" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230905 15:28:02.513" endtime="20230905 15:28:05.516"/>
+</kw>
+<kw name="Click to Add Staff" library="CMSkeyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_AddStaff}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230905 15:28:05.519" level="INFO">Clicking element '//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20230905 15:28:05.518" endtime="20230905 15:28:05.640"/>
+</kw>
+<status status="PASS" starttime="20230905 15:28:05.516" endtime="20230905 15:28:05.640"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230905 15:28:08.643" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230905 15:28:05.640" endtime="20230905 15:28:08.643"/>
+</kw>
+<kw name="Enter Staff Name" library="CMSkeyword">
+<arg>Ajit</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_addstaffName}</arg>
+<arg>${staffname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230905 15:28:08.645" level="INFO">Typing text 'Ajit' into text field '//input[@placeholder='Name']'.</msg>
+<status status="PASS" starttime="20230905 15:28:08.645" endtime="20230905 15:28:08.845"/>
+</kw>
+<status status="PASS" starttime="20230905 15:28:08.644" endtime="20230905 15:28:08.845"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230905 15:28:11.845" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230905 15:28:08.845" endtime="20230905 15:28:11.845"/>
+</kw>
+<kw name="Enter Staff Email" library="CMSkeyword">
+<arg>ajit@99gmail.com</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${text_staffemail}</arg>
+<arg>${staffemail}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230905 15:28:11.848" level="INFO">Typing text 'ajit@99gmail.com' into text field '//input[@placeholder='Email']'.</msg>
+<status status="PASS" starttime="20230905 15:28:11.845" endtime="20230905 15:28:12.142"/>
+</kw>
+<status status="PASS" starttime="20230905 15:28:11.845" endtime="20230905 15:28:12.142"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230905 15:28:15.142" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230905 15:28:12.142" endtime="20230905 15:28:15.142"/>
+</kw>
+<kw name="Select Cancel" library="CMSkeyword">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${sel_cancel}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230905 15:28:15.145" level="INFO">Clicking button '//button[@class='sc-aXZVg bCmdnD btn-transparent me-2']'.</msg>
+<status status="PASS" starttime="20230905 15:28:15.143" endtime="20230905 15:28:15.293"/>
+</kw>
+<status status="PASS" starttime="20230905 15:28:15.143" endtime="20230905 15:28:15.293"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230905 15:28:18.293" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230905 15:28:15.293" endtime="20230905 15:28:18.293"/>
+</kw>
+<status status="PASS" starttime="20230905 15:27:45.972" endtime="20230905 15:28:18.293"/>
+</kw>
+<status status="PASS" starttime="20230905 15:27:45.966" endtime="20230905 15:28:18.293"/>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230905 15:28:18.293" endtime="20230905 15:28:20.366"/>
+</kw>
+<status status="PASS" starttime="20230905 15:27:16.512" endtime="20230905 15:28:20.366"/>
+</suite>
+<status status="PASS" starttime="20230905 15:27:16.486" endtime="20230905 15:28:20.369"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Staff Add">Suites.Staff Add</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

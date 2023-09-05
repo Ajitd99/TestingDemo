@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230905 15:25:30.262" rpa="false" schemaversion="4">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Forgot Password" source="C:\Users\User\PycharmProjects\TestAutomation\CMS1\Forgot_Password.robot">
+<test id="s1-s1-t1" name="Verify Forgot Password" line="10">
+<kw name="Open My Browser" library="CMSkeyword" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${CMSURL}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230905 15:25:32.843" level="INFO">Opening browser 'headlesschrome' to base url 'https://cms-staging.oneyou.io/auth/login'.</msg>
+<status status="PASS" starttime="20230905 15:25:32.843" endtime="20230905 15:26:01.700"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230905 15:26:01.700" endtime="20230905 15:26:01.840"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230905 15:26:01.840" endtime="20230905 15:26:01.845"/>
+</kw>
+<status status="PASS" starttime="20230905 15:25:32.843" endtime="20230905 15:26:01.845"/>
+</kw>
+<kw name="ForgotPassword">
+<arg>ajit.d@amazatic.com</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230905 15:26:04.848" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230905 15:26:01.845" endtime="20230905 15:26:04.848"/>
+</kw>
+<kw name="Click link on Forgot Password" library="CMSkeyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${forgot_password}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230905 15:26:04.850" level="INFO">Clicking element '//a[normalize-space()='I forgot my password']'.</msg>
+<status status="PASS" starttime="20230905 15:26:04.850" endtime="20230905 15:26:04.985"/>
+</kw>
+<status status="PASS" starttime="20230905 15:26:04.848" endtime="20230905 15:26:04.985"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230905 15:26:07.986" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230905 15:26:04.985" endtime="20230905 15:26:07.986"/>
+</kw>
+<kw name="Enter Your Email" library="CMSkeyword">
+<arg>${email1}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_recovryemail}</arg>
+<arg>${email1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230905 15:26:07.987" level="INFO">Typing text 'ajit.d@amazatic.com' into text field '//input[@placeholder='Enter email']'.</msg>
+<status status="PASS" starttime="20230905 15:26:07.987" endtime="20230905 15:26:08.315"/>
+</kw>
+<status status="PASS" starttime="20230905 15:26:07.986" endtime="20230905 15:26:08.316"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230905 15:26:11.317" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230905 15:26:08.316" endtime="20230905 15:26:11.317"/>
+</kw>
+<kw name="Send Email" library="CMSkeyword">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${sub_sendemail}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230905 15:26:11.320" level="INFO">Clicking button '//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20230905 15:26:11.317" endtime="20230905 15:26:18.426"/>
+</kw>
+<status status="PASS" starttime="20230905 15:26:11.317" endtime="20230905 15:26:18.426"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230905 15:26:23.427" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230905 15:26:18.426" endtime="20230905 15:26:23.427"/>
+</kw>
+<status status="PASS" starttime="20230905 15:26:01.845" endtime="20230905 15:26:23.427"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230905 15:26:23.427" endtime="20230905 15:26:25.548"/>
+</kw>
+<status status="PASS" starttime="20230905 15:25:32.835" endtime="20230905 15:26:25.549"/>
+</test>
+<status status="PASS" starttime="20230905 15:25:30.295" endtime="20230905 15:26:25.549"/>
+</suite>
+<status status="PASS" starttime="20230905 15:25:30.278" endtime="20230905 15:26:25.553"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Forgot Password">Suites.Forgot Password</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

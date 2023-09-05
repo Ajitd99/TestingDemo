@@ -1,0 +1,58 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Dashboard Section Verify                                               
+==============================================================================
+Verify Dashboard Section                                                
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\User\PycharmProjects\TestAutomation\CMS1\Dashboard_Section_Verify.robot:10
+    T:  Verify Dashboard Section    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\User\PycharmProjects\TestAutomation\CMS1\Dashboard_Section_Verify.robot:0
+      Dashboard Section    mahesh.j@amazatic.com    OneYou@123
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\User\PycharmProjects\TestAutomation\CMS1\Dashboard_Section_Verify.robot:32
+      Select 14 days Graph Data    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\User\PycharmProjects\TestAutomation\Resoures\CMSkeyword.robot:81
+      Click Element    ${sel_graph14}
+      |  ${sel_graph14} = css:body > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > section:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) (str)
+______________________________________________________________________________
+| FAIL |
+ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (364, 604)
+  (Session info: headless chrome=116.0.5845.141)
+Stacktrace:
+	GetHandleVerifier [0x00007FF725DA52A2+57122]
+	(No symbol) [0x00007FF725D1EA92]
+	(No symbol) [0x00007FF725BEE3AB]
+	(No symbol) [0x00007FF725C2D783]
+	(No symbol) [0x00007FF725C2BD5F]
+	(No symbol) [0x00007FF725C29DC8]
+	(No symbol) [0x00007FF725C28FD5]
+	(No symbol) [0x00007FF725C1F25F]
+	(No symbol) [0x00007FF725C46FDA]
+	(No symbol) [0x00007FF725C1EB76]
+	(No symbol) [0x00007FF725C471F0]
+	(No symbol) [0x00007FF725C5EB82]
+	(No symbol) [0x00007FF725C46DB3]
+	(No symbol) [0x00007FF725C1D2B1]
+	(No symbol) [0x00007FF725C1E494]
+	GetHandleVerifier [0x00007FF72604EF82+2849794]
+	GetHandleVerifier [0x00007FF7260A1D24+3189156]
+	GetHandleVerifier [0x00007FF72609ACAF+3160367]
+	GetHandleVerifier [0x00007FF725E36D06+653702]
+	(No symbol) [0x00007FF725D2A208]
+	(No symbol) [0x00007FF725D262C4]
+	(No symbol) [0x00007FF725D263F6]
+	(No symbol) [0x00007FF725D167A3]
+	BaseThreadInitThunk [0x00007FFBBC8F257D+29]
+	RtlUserThreadStart [0x00007FFBBE2CAA68+40]
+------------------------------------------------------------------------------
+Suites.Dashboard Section Verify                                       | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\User\PycharmProjects\TestAutomation\pabot_results\1\output.xml

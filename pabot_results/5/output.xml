@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230905 15:25:30.247" rpa="false" schemaversion="4">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Invalid Input" source="C:\Users\User\PycharmProjects\TestAutomation\CMS1\Invalid_Input.robot">
+<test id="s1-s1-t1" name="Invalid Input Login Test" line="10">
+<kw name="Open My Browser" library="CMSkeyword" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${CMSURL}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230905 15:25:32.843" level="INFO">Opening browser 'headlesschrome' to base url 'https://cms-staging.oneyou.io/auth/login'.</msg>
+<status status="PASS" starttime="20230905 15:25:32.843" endtime="20230905 15:26:06.930"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230905 15:26:06.930" endtime="20230905 15:26:07.089"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230905 15:26:07.089" endtime="20230905 15:26:07.095"/>
+</kw>
+<status status="PASS" starttime="20230905 15:25:32.835" endtime="20230905 15:26:07.095"/>
+</kw>
+<kw name="Invalide Login">
+<arg>ajitd99@gmail.com</arg>
+<arg>ajit#9999</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230905 15:26:10.097" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230905 15:26:07.096" endtime="20230905 15:26:10.097"/>
+</kw>
+<kw name="Enter Email" library="CMSkeyword">
+<arg>${email}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_Username}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230905 15:26:10.100" level="INFO">Typing text 'ajitd99@gmail.com' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20230905 15:26:10.098" endtime="20230905 15:26:18.650"/>
+</kw>
+<status status="PASS" starttime="20230905 15:26:10.097" endtime="20230905 15:26:18.651"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230905 15:26:19.652" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230905 15:26:18.651" endtime="20230905 15:26:19.652"/>
+</kw>
+<kw name="Enter Password" library="CMSkeyword">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230905 15:26:19.654" level="INFO">Typing text 'ajit#9999' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20230905 15:26:19.654" endtime="20230905 15:26:19.880"/>
+</kw>
+<status status="PASS" starttime="20230905 15:26:19.652" endtime="20230905 15:26:19.880"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230905 15:26:20.880" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230905 15:26:19.880" endtime="20230905 15:26:20.880"/>
+</kw>
+<kw name="Click on Sign Button" library="CMSkeyword">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${submit_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230905 15:26:20.881" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<status status="PASS" starttime="20230905 15:26:20.881" endtime="20230905 15:26:21.046"/>
+</kw>
+<status status="PASS" starttime="20230905 15:26:20.880" endtime="20230905 15:26:21.046"/>
+</kw>
+<status status="PASS" starttime="20230905 15:26:07.096" endtime="20230905 15:26:21.046"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230905 15:26:21.046" endtime="20230905 15:26:23.121"/>
+</kw>
+<status status="PASS" starttime="20230905 15:25:32.835" endtime="20230905 15:26:23.121"/>
+</test>
+<test id="s1-s1-t2" name="Invalid Input Login Test" line="10">
+<kw name="Open My Browser" library="CMSkeyword" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${CMSURL}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230905 15:26:23.129" level="INFO">Opening browser 'headlesschrome' to base url 'https://cms-staging.oneyou.io/auth/login'.</msg>
+<status status="PASS" starttime="20230905 15:26:23.129" endtime="20230905 15:26:39.100"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230905 15:26:39.100" endtime="20230905 15:26:39.243"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230905 15:26:39.243" endtime="20230905 15:26:39.245"/>
+</kw>
+<status status="PASS" starttime="20230905 15:26:23.129" endtime="20230905 15:26:39.245"/>
+</kw>
+<kw name="Invalide Login">
+<arg>ajitd99@gmail.com</arg>
+<arg>1</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230905 15:26:42.245" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230905 15:26:39.245" endtime="20230905 15:26:42.245"/>
+</kw>
+<kw name="Enter Email" library="CMSkeyword">
+<arg>${email}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_Username}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230905 15:26:42.247" level="INFO">Typing text 'ajitd99@gmail.com' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20230905 15:26:42.247" endtime="20230905 15:26:42.564"/>
+</kw>
+<status status="PASS" starttime="20230905 15:26:42.245" endtime="20230905 15:26:42.564"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230905 15:26:43.571" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230905 15:26:42.564" endtime="20230905 15:26:43.571"/>
+</kw>
+<kw name="Enter Password" library="CMSkeyword">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230905 15:26:43.571" level="INFO">Typing text '1' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20230905 15:26:43.571" endtime="20230905 15:26:43.754"/>
+</kw>
+<status status="PASS" starttime="20230905 15:26:43.571" endtime="20230905 15:26:43.756"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230905 15:26:44.756" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230905 15:26:43.756" endtime="20230905 15:26:44.756"/>
+</kw>
+<kw name="Click on Sign Button" library="CMSkeyword">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${submit_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230905 15:26:44.758" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<status status="PASS" starttime="20230905 15:26:44.756" endtime="20230905 15:26:44.907"/>
+</kw>
+<status status="PASS" starttime="20230905 15:26:44.756" endtime="20230905 15:26:44.907"/>
+</kw>
+<status status="PASS" starttime="20230905 15:26:39.245" endtime="20230905 15:26:44.907"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230905 15:26:44.907" endtime="20230905 15:26:46.979"/>
+</kw>
+<status status="PASS" starttime="20230905 15:26:23.121" endtime="20230905 15:26:46.979"/>
+</test>
+<test id="s1-s1-t3" name="Invalid Input Login Test" line="10">
+<kw name="Open My Browser" library="CMSkeyword" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${CMSURL}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230905 15:26:46.983" level="INFO">Opening browser 'headlesschrome' to base url 'https://cms-staging.oneyou.io/auth/login'.</msg>
+<status status="PASS" starttime="20230905 15:26:46.983" endtime="20230905 15:27:07.404"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230905 15:27:07.404" endtime="20230905 15:27:07.547"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230905 15:27:07.547" endtime="20230905 15:27:07.549"/>
+</kw>
+<status status="PASS" starttime="20230905 15:26:46.983" endtime="20230905 15:27:07.549"/>
+</kw>
+<kw name="Invalide Login">
+<arg>mahesh.j+nike@amazatic.com</arg>
+<arg>ajit#9999</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230905 15:27:10.549" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230905 15:27:07.549" endtime="20230905 15:27:10.549"/>
+</kw>
+<kw name="Enter Email" library="CMSkeyword">
+<arg>${email}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_Username}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230905 15:27:10.549" level="INFO">Typing text 'mahesh.j+nike@amazatic.com' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20230905 15:27:10.549" endtime="20230905 15:27:10.910"/>
+</kw>
+<status status="PASS" starttime="20230905 15:27:10.549" endtime="20230905 15:27:10.910"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230905 15:27:11.912" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230905 15:27:10.910" endtime="20230905 15:27:11.912"/>
+</kw>
+<kw name="Enter Password" library="CMSkeyword">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230905 15:27:11.914" level="INFO">Typing text 'ajit#9999' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20230905 15:27:11.913" endtime="20230905 15:27:12.130"/>
+</kw>
+<status status="PASS" starttime="20230905 15:27:11.912" endtime="20230905 15:27:12.130"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230905 15:27:13.130" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230905 15:27:12.130" endtime="20230905 15:27:13.130"/>
+</kw>
+<kw name="Click on Sign Button" library="CMSkeyword">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${submit_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230905 15:27:13.135" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<status status="PASS" starttime="20230905 15:27:13.132" endtime="20230905 15:27:13.290"/>
+</kw>
+<status status="PASS" starttime="20230905 15:27:13.130" endtime="20230905 15:27:13.290"/>
+</kw>
+<status status="PASS" starttime="20230905 15:27:07.549" endtime="20230905 15:27:13.290"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230905 15:27:13.290" endtime="20230905 15:27:15.392"/>
+</kw>
+<status status="PASS" starttime="20230905 15:26:46.979" endtime="20230905 15:27:15.392"/>
+</test>
+<test id="s1-s1-t4" name="Invalid Input Login Test" line="10">
+<kw name="Open My Browser" library="CMSkeyword" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${CMSURL}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230905 15:27:15.396" level="INFO">Opening browser 'headlesschrome' to base url 'https://cms-staging.oneyou.io/auth/login'.</msg>
+<status status="PASS" starttime="20230905 15:27:15.392" endtime="20230905 15:27:34.211"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230905 15:27:34.211" endtime="20230905 15:27:34.350"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230905 15:27:34.350" endtime="20230905 15:27:34.350"/>
+</kw>
+<status status="PASS" starttime="20230905 15:27:15.392" endtime="20230905 15:27:34.350"/>
+</kw>
+<kw name="Invalide Login">
+<arg>mahesh.j+nike@amazatic.com</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230905 15:27:37.358" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230905 15:27:34.350" endtime="20230905 15:27:37.358"/>
+</kw>
+<kw name="Enter Email" library="CMSkeyword">
+<arg>${email}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_Username}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230905 15:27:37.359" level="INFO">Typing text 'mahesh.j+nike@amazatic.com' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20230905 15:27:37.359" endtime="20230905 15:27:37.692"/>
+</kw>
+<status status="PASS" starttime="20230905 15:27:37.359" endtime="20230905 15:27:37.692"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230905 15:27:38.698" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230905 15:27:37.692" endtime="20230905 15:27:38.698"/>
+</kw>
+<kw name="Enter Password" library="CMSkeyword">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230905 15:27:38.698" level="INFO">Typing text '' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20230905 15:27:38.698" endtime="20230905 15:27:38.876"/>
+</kw>
+<status status="PASS" starttime="20230905 15:27:38.698" endtime="20230905 15:27:38.876"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230905 15:27:39.877" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230905 15:27:38.876" endtime="20230905 15:27:39.877"/>
+</kw>
+<kw name="Click on Sign Button" library="CMSkeyword">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${submit_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230905 15:27:39.879" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<status status="PASS" starttime="20230905 15:27:39.878" endtime="20230905 15:27:40.038"/>
+</kw>
+<status status="PASS" starttime="20230905 15:27:39.877" endtime="20230905 15:27:40.038"/>
+</kw>
+<status status="PASS" starttime="20230905 15:27:34.350" endtime="20230905 15:27:40.038"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230905 15:27:40.038" endtime="20230905 15:27:42.127"/>
+</kw>
+<status status="PASS" starttime="20230905 15:27:15.392" endtime="20230905 15:27:42.127"/>
+</test>
+<status status="PASS" starttime="20230905 15:25:30.287" endtime="20230905 15:27:42.129"/>
+</suite>
+<status status="PASS" starttime="20230905 15:25:30.270" endtime="20230905 15:27:42.133"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1" name="Invalid Input">Suites.Invalid Input</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230905 15:26:23.121" level="WARN">Multiple tests with name 'Invalid Input Login Test' executed in suite 'Suites.Invalid Input'.</msg>
+<msg timestamp="20230905 15:26:46.979" level="WARN">Multiple tests with name 'Invalid Input Login Test' executed in suite 'Suites.Invalid Input'.</msg>
+<msg timestamp="20230905 15:27:15.392" level="WARN">Multiple tests with name 'Invalid Input Login Test' executed in suite 'Suites.Invalid Input'.</msg>
+</errors>
+</robot>

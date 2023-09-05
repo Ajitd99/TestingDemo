@@ -1,0 +1,27 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.ResetPassword1 Verify OldLink                                          
+==============================================================================
+Verify Reset Password Using old link                                    
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\User\PycharmProjects\TestAutomation\CMS1\ResetPassword1_Verify_OldLink.robot:10
+    T:  Verify Reset Password Using old link    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\User\PycharmProjects\TestAutomation\CMS1\ResetPassword1_Verify_OldLink.robot:0
+      Reset Password old link    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\User\PycharmProjects\TestAutomation\CMS1\ResetPassword1_Verify_OldLink.robot:17
+      Page Should Contain    This link is Expired!
+______________________________________________________________________________
+| FAIL |
+Page should have contained text 'This link is Expired!' but did not.
+------------------------------------------------------------------------------
+Suites.ResetPassword1 Verify OldLink                                  | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\User\PycharmProjects\TestAutomation\pabot_results\18\output.xml

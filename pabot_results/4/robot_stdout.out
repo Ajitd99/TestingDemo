@@ -1,0 +1,14 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Forgot Password2 Using NonRegistered Email                             
+==============================================================================
+Verify Forgot Password Using Non Registered Email                     | PASS |
+------------------------------------------------------------------------------
+Suites.Forgot Password2 Using NonRegistered Email                     | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Users\User\PycharmProjects\TestAutomation\pabot_results\4\output.xml

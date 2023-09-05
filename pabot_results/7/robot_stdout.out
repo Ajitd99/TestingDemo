@@ -1,0 +1,31 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.People Serach Using Checkbox                                           
+==============================================================================
+Verify Search Box Using CheckBox                                        
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\User\PycharmProjects\TestAutomation\CMS1\People_Serach_Using_Checkbox.robot:10
+    T:  Verify Search Box Using CheckBox    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\User\PycharmProjects\TestAutomation\CMS1\People_Serach_Using_Checkbox.robot:0
+      People Search Using CheckBox    mahesh.j+nike@amazatic.com    1
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\User\PycharmProjects\TestAutomation\CMS1\People_Serach_Using_Checkbox.robot:26
+      Click on People section    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\User\PycharmProjects\TestAutomation\Resoures\CMSkeyword.robot:109
+      Click Element    ${Sel_peoplesection}
+      |  ${Sel_peoplesection} = //a[@href='/people'] (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator '//a[@href='/people']' not found.
+------------------------------------------------------------------------------
+Suites.People Serach Using Checkbox                                   | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\User\PycharmProjects\TestAutomation\pabot_results\7\output.xml

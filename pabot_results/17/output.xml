@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230905 15:27:15.045" rpa="false" schemaversion="4">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="ResetPassword Verify DifferentPassword" source="C:\Users\User\PycharmProjects\TestAutomation\CMS1\ResetPassword_Verify_DifferentPassword.robot">
+<test id="s1-s1-t1" name="Verify Reset Password Using Different Password" line="10">
+<kw name="Open My Browser" library="CMSkeyword" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${CMSURL}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230905 15:27:15.765" level="INFO">Opening browser 'headlesschrome' to base url 'https://cms-staging.oneyou.io/auth/login'.</msg>
+<status status="PASS" starttime="20230905 15:27:15.765" endtime="20230905 15:27:34.682"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230905 15:27:34.682" endtime="20230905 15:27:34.829"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230905 15:27:34.829" endtime="20230905 15:27:34.829"/>
+</kw>
+<status status="PASS" starttime="20230905 15:27:15.765" endtime="20230905 15:27:34.829"/>
+</kw>
+<kw name="Reset Password Using Different Password">
+<arg>1234567</arg>
+<arg>12345678</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230905 15:27:37.834" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230905 15:27:34.833" endtime="20230905 15:27:37.834"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Forgot Password</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230905 15:27:38.114" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230905 15:27:38.114" level="FAIL">Page should have contained text 'Forgot Password' but did not.</msg>
+<status status="FAIL" starttime="20230905 15:27:37.834" endtime="20230905 15:27:38.121"/>
+</kw>
+<kw name="Enter New Password" library="CMSkeyword">
+<arg>${new-password}</arg>
+<status status="NOT RUN" starttime="20230905 15:27:38.121" endtime="20230905 15:27:38.121"/>
+</kw>
+<kw name="Enter Confirm Password" library="CMSkeyword">
+<arg>${Confirm-password}</arg>
+<status status="NOT RUN" starttime="20230905 15:27:38.121" endtime="20230905 15:27:38.121"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230905 15:27:38.121" endtime="20230905 15:27:38.121"/>
+</kw>
+<kw name="Confirm Password" library="CMSkeyword">
+<status status="NOT RUN" starttime="20230905 15:27:38.121" endtime="20230905 15:27:38.121"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230905 15:27:38.121" endtime="20230905 15:27:38.121"/>
+</kw>
+<status status="FAIL" starttime="20230905 15:27:34.833" endtime="20230905 15:27:38.121"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230905 15:27:38.125" endtime="20230905 15:27:40.193"/>
+</kw>
+<status status="FAIL" starttime="20230905 15:27:15.764" endtime="20230905 15:27:40.193">Page should have contained text 'Forgot Password' but did not.</status>
+</test>
+<status status="FAIL" starttime="20230905 15:27:15.070" endtime="20230905 15:27:40.197"/>
+</suite>
+<status status="FAIL" starttime="20230905 15:27:15.056" endtime="20230905 15:27:40.197"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="ResetPassword Verify DifferentPassword">Suites.ResetPassword Verify DifferentPassword</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
