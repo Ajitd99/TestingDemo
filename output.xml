@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230906 12:25:14.161" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230906 12:56:32.130" rpa="false" schemaversion="4">
 <suite id="s1" name="Login2" source="C:\Users\User\PycharmProjects\TestAutomation\TestCases\Login2.robot">
 <test id="s1-t1" name="LoginTest" line="8">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>https://boxeswala.com/my-account/</arg>
-<arg>chrome</arg>
+<arg>Firefox</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230906 12:25:14.306" level="INFO">Opening browser 'chrome' to base url 'https://boxeswala.com/my-account/'.</msg>
-<status status="PASS" starttime="20230906 12:25:14.306" endtime="20230906 12:25:31.925"/>
+<msg timestamp="20230906 12:56:32.276" level="INFO">Opening browser 'Firefox' to base url 'https://boxeswala.com/my-account/'.</msg>
+<status status="PASS" starttime="20230906 12:56:32.276" endtime="20230906 12:56:55.099"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:username</arg>
 <arg>NilamAjit2022@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230906 12:25:31.925" level="INFO">Typing text 'NilamAjit2022@gmail.com' into text field 'id:username'.</msg>
-<status status="PASS" starttime="20230906 12:25:31.925" endtime="20230906 12:25:32.155"/>
+<msg timestamp="20230906 12:56:55.100" level="INFO">Typing text 'NilamAjit2022@gmail.com' into text field 'id:username'.</msg>
+<status status="PASS" starttime="20230906 12:56:55.099" endtime="20230906 12:56:55.159"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:password</arg>
 <arg>Nil@aju2023</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230906 12:25:32.160" level="INFO">Typing text 'Nil@aju2023' into text field 'id:password'.</msg>
-<status status="PASS" starttime="20230906 12:25:32.155" endtime="20230906 12:25:32.365"/>
+<msg timestamp="20230906 12:56:55.159" level="INFO">Typing text 'Nil@aju2023' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20230906 12:56:55.159" endtime="20230906 12:56:55.183"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://button[contains(text(),'Log in')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230906 12:25:32.365" level="INFO">Clicking element 'xpath://button[contains(text(),'Log in')]'.</msg>
-<status status="PASS" starttime="20230906 12:25:32.365" endtime="20230906 12:25:36.161"/>
+<msg timestamp="20230906 12:56:55.183" level="INFO">Clicking element 'xpath://button[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20230906 12:56:55.183" endtime="20230906 12:56:58.229"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230906 12:25:36.166" endtime="20230906 12:25:38.358"/>
+<status status="PASS" starttime="20230906 12:56:58.229" endtime="20230906 12:57:01.878"/>
 </kw>
-<status status="PASS" starttime="20230906 12:25:14.306" endtime="20230906 12:25:38.358"/>
+<status status="PASS" starttime="20230906 12:56:32.276" endtime="20230906 12:57:01.878"/>
 </test>
-<status status="PASS" starttime="20230906 12:25:14.161" endtime="20230906 12:25:38.358"/>
+<status status="PASS" starttime="20230906 12:56:32.130" endtime="20230906 12:57:01.878"/>
 </suite>
 <statistics>
 <total>
