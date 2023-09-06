@@ -1,50 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230906 11:32:49.813" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230906 12:17:27.043" rpa="false" schemaversion="4">
 <suite id="s1" name="Login2" source="C:\Users\User\PycharmProjects\TestAutomation\TestCases\Login2.robot">
 <test id="s1-t1" name="LoginTest" line="8">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>https://boxeswala.com/my-account/</arg>
 <arg>Firefox</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230906 11:32:50.013" level="INFO">Opening browser 'Firefox' to base url 'https://boxeswala.com/my-account/'.</msg>
-<status status="PASS" starttime="20230906 11:32:50.013" endtime="20230906 11:33:13.597"/>
+<msg timestamp="20230906 12:17:27.194" level="INFO">Opening browser 'Firefox' to base url 'https://boxeswala.com/my-account/'.</msg>
+<msg timestamp="20230906 12:17:27.603" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230906 12:17:27.603" level="FAIL">NoSuchDriverException: Message: Unable to locate or obtain driver for firefox; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</msg>
+<status status="FAIL" starttime="20230906 12:17:27.194" endtime="20230906 12:17:27.603"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:username</arg>
 <arg>NilamAjit2022@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230906 11:33:13.598" level="INFO">Typing text 'NilamAjit2022@gmail.com' into text field 'id:username'.</msg>
-<status status="PASS" starttime="20230906 11:33:13.597" endtime="20230906 11:33:13.669"/>
+<status status="NOT RUN" starttime="20230906 12:17:27.603" endtime="20230906 12:17:27.603"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:password</arg>
 <arg>Nil@aju2023</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230906 11:33:13.670" level="INFO">Typing text 'Nil@aju2023' into text field 'id:password'.</msg>
-<status status="PASS" starttime="20230906 11:33:13.670" endtime="20230906 11:33:13.693"/>
+<status status="NOT RUN" starttime="20230906 12:17:27.603" endtime="20230906 12:17:27.603"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://button[contains(text(),'Log in')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230906 11:33:13.693" level="INFO">Clicking element 'xpath://button[contains(text(),'Log in')]'.</msg>
-<status status="PASS" starttime="20230906 11:33:13.693" endtime="20230906 11:33:17.023"/>
+<status status="NOT RUN" starttime="20230906 12:17:27.603" endtime="20230906 12:17:27.603"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230906 11:33:17.024" endtime="20230906 11:33:19.847"/>
+<status status="NOT RUN" starttime="20230906 12:17:27.603" endtime="20230906 12:17:27.603"/>
 </kw>
-<status status="PASS" starttime="20230906 11:32:50.012" endtime="20230906 11:33:19.848"/>
+<status status="FAIL" starttime="20230906 12:17:27.186" endtime="20230906 12:17:27.609">NoSuchDriverException: Message: Unable to locate or obtain driver for firefox; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
 </test>
-<status status="PASS" starttime="20230906 11:32:49.815" endtime="20230906 11:33:19.849"/>
+<status status="FAIL" starttime="20230906 12:17:27.043" endtime="20230906 12:17:27.609"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Login2">Login2</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Login2">Login2</stat>
 </suite>
 </statistics>
 <errors>
