@@ -1,15 +1,15 @@
-datasources:e6bde3f3f09128f7cb6cfc4c154981bb2eee7e24
-commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
+datasources:f0c79c35a333146751c52df84efeac11fcd57dbb
+commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
 suitesfrom:no-suites-from-option
-file:c7f38dae27c642ca67608d212b61ecf9a9fcd7d7
---suite Suites.1 Verify Login
---suite Suites.10 Reset Password
---suite Suites.11 ResetPassword Verify Old Link
---suite Suites.2 Login Test Invalid Input
---suite Suites.3 Logout Test
---suite Suites.4 Verify Forgot Password
---suite Suites.5 Dashboard Section Verify
---suite Suites.6 People Section Verify
---suite Suites.7 Staff Section Verify
---suite Suites.8 Report Section Verify
---suite Suites.9 ResetPassword Verify Different Password
+file:8cb3cf9ef98c5ee922206218cc6f40ef58f3a2f8
+--suite CMS1.1 Verify Login
+--suite CMS1.10 Reset Password
+--suite CMS1.11 ResetPassword Verify Old Link
+--suite CMS1.2 Login Test Invalid Input
+--suite CMS1.3 Logout Test
+--suite CMS1.4 Verify Forgot Password
+--suite CMS1.5 Dashboard Section Verify
+--suite CMS1.6 People Section Verify
+--suite CMS1.7 Staff Section Verify
+--suite CMS1.8 Report Section Verify
+--suite CMS1.9 ResetPassword Verify Different Password
