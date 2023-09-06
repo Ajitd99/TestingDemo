@@ -1,15 +1,15 @@
-datasources:79c0706b8c594abe1fe31f8789ee560b4c0ced52
+datasources:e6bde3f3f09128f7cb6cfc4c154981bb2eee7e24
 commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
 suitesfrom:no-suites-from-option
-file:41b48e4f47014bed104b9598b7783282f7989d7b
---suite Suites.Dashboard Section Verify
---suite Suites.Logout Test
---suite Suites.Reset Password
---suite Suites.ResetPassword Verify DifferentPassword
---suite Suites.ResetPassword1 Verify OldLink
---suite Suites.Login Test Invalid Input
---suite Suites.People Section Verify
---suite Suites.Report Section Verify
---suite Suites.Staff Section Verify
---suite Suites.Verify Forgot Password
---suite Suites.Verify Login
+file:c7f38dae27c642ca67608d212b61ecf9a9fcd7d7
+--suite Suites.1 Verify Login
+--suite Suites.10 Reset Password
+--suite Suites.11 ResetPassword Verify Old Link
+--suite Suites.2 Login Test Invalid Input
+--suite Suites.3 Logout Test
+--suite Suites.4 Verify Forgot Password
+--suite Suites.5 Dashboard Section Verify
+--suite Suites.6 People Section Verify
+--suite Suites.7 Staff Section Verify
+--suite Suites.8 Report Section Verify
+--suite Suites.9 ResetPassword Verify Different Password

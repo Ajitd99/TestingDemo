@@ -6,7 +6,7 @@ Variables      ../PageObject/Locators.py
 ${browser}      headlesschrome
 ${CMSURL}       https://cms-staging.oneyou.io/auth/login
 ${APP_URL}      https://cms-staging.oneyou.io/dashboard
-${reserpassword}     https://cms-staging.oneyou.io/auth/reset-password?code=gAAAAABk8b_qZNlSSChX_-bf9Y9Y9gTQLri-X0ZZUeiU-4iwJTPBzEanbmm9seQWl1rFTzdqaTHY1-Uh1Dzi8a2D6ARA4jRL7I1kmMmZFkmwdXzQ7iDUEVnzNn6QS97NrrU_tS4-VknUkEs9E157mFWa3qEgKsmMIQVJThXw-oSdpw5KyTSDlKFha60II-pofwsOUJGchpps-m0FNIJmWCq-AkzVCNyONvjWd7W8qZwjI129gEiK_bgnuZfOhajaRqxwqbnS0jR3
+${reserpassword}    https://cms-staging.oneyou.io/auth/reset-password?code=gAAAAABk92C58EBaC1bzOpRXdwboRJzyx7swaLfJBAVujIrFgYqt06VJATbhIz4_Or5dtWypegF_Q60aYYsvgRozBn40u6u7ye9TXxvu9W2erxVXzESfOowM548Tcss1jdK966VFZG28spHuM1uMB-QbA3KhpJMaJMotN3prCFoCPHfdW7p9TH8Yeef-jBgdjZPEwdam9O3tnZ4oV84CuZv8mbuIAl5rSZSHa-hRwt29mvLadzw_6FIqzHRGf24o3YCnwE70OIbq
 
 *** Keywords ***
 
