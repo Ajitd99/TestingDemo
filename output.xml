@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230907 09:50:04.648" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230907 09:54:50.502" rpa="false" schemaversion="4">
 <suite id="s1" name="1 Verify Login" source="C:\Users\User\PycharmProjects\TestAutomation\CMS1\1_Verify_Login.robot">
 <kw name="Open My Browser" library="CMSkeyword" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${CMSURL}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230907 09:50:04.786" level="INFO">Opening browser 'chrome' to base url 'https://cms-staging.oneyou.io/auth/login'.</msg>
-<status status="PASS" starttime="20230907 09:50:04.786" endtime="20230907 09:50:15.322"/>
+<msg timestamp="20230907 09:54:50.748" level="INFO">Opening browser 'Edge' to base url 'https://cms-staging.oneyou.io/auth/login'.</msg>
+<status status="PASS" starttime="20230907 09:54:50.748" endtime="20230907 09:55:03.044"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230907 09:50:15.322" endtime="20230907 09:50:15.447"/>
+<status status="PASS" starttime="20230907 09:55:03.044" endtime="20230907 09:55:03.183"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20230907 09:50:15.447" endtime="20230907 09:50:15.447"/>
+<status status="PASS" starttime="20230907 09:55:03.183" endtime="20230907 09:55:03.184"/>
 </kw>
-<status status="PASS" starttime="20230907 09:50:04.786" endtime="20230907 09:50:15.447"/>
+<status status="PASS" starttime="20230907 09:54:50.748" endtime="20230907 09:55:03.184"/>
 </kw>
 <test id="s1-t1" name="Verify the Login Test with Valid Input" line="9">
 <kw name="Login the Dashboard" library="CMSkeyword">
 <kw name="Sleep" library="BuiltIn">
 <arg>3seconds</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230907 09:50:18.448" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230907 09:50:15.448" endtime="20230907 09:50:18.448"/>
+<msg timestamp="20230907 09:55:06.186" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230907 09:55:03.185" endtime="20230907 09:55:06.186"/>
 </kw>
 <kw name="Enter Email" library="CMSkeyword">
 <arg>mahesh.j@amazatic.com</arg>
@@ -34,10 +34,10 @@
 <arg>${txt_Username}</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230907 09:50:18.449" level="INFO">Typing text 'mahesh.j@amazatic.com' into text field 'name:email'.</msg>
-<status status="PASS" starttime="20230907 09:50:18.448" endtime="20230907 09:50:18.585"/>
+<msg timestamp="20230907 09:55:06.187" level="INFO">Typing text 'mahesh.j@amazatic.com' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20230907 09:55:06.186" endtime="20230907 09:55:06.324"/>
 </kw>
-<status status="PASS" starttime="20230907 09:50:18.448" endtime="20230907 09:50:18.585"/>
+<status status="PASS" starttime="20230907 09:55:06.186" endtime="20230907 09:55:06.324"/>
 </kw>
 <kw name="Enter Password" library="CMSkeyword">
 <arg>OneYou@123</arg>
@@ -45,60 +45,60 @@
 <arg>${txt_password}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230907 09:50:18.585" level="INFO">Typing text 'OneYou@123' into text field 'name:password'.</msg>
-<status status="PASS" starttime="20230907 09:50:18.585" endtime="20230907 09:50:18.677"/>
+<msg timestamp="20230907 09:55:06.325" level="INFO">Typing text 'OneYou@123' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20230907 09:55:06.325" endtime="20230907 09:55:06.423"/>
 </kw>
-<status status="PASS" starttime="20230907 09:50:18.585" endtime="20230907 09:50:18.677"/>
+<status status="PASS" starttime="20230907 09:55:06.325" endtime="20230907 09:55:06.423"/>
 </kw>
 <kw name="Click on Sign Button" library="CMSkeyword">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${submit_button}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230907 09:50:18.677" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
-<status status="PASS" starttime="20230907 09:50:18.677" endtime="20230907 09:50:18.740"/>
+<msg timestamp="20230907 09:55:06.424" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<status status="PASS" starttime="20230907 09:55:06.424" endtime="20230907 09:55:06.498"/>
 </kw>
-<status status="PASS" starttime="20230907 09:50:18.677" endtime="20230907 09:50:18.741"/>
+<status status="PASS" starttime="20230907 09:55:06.424" endtime="20230907 09:55:06.499"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5seconds</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230907 09:50:23.742" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230907 09:50:18.741" endtime="20230907 09:50:23.742"/>
+<msg timestamp="20230907 09:55:11.499" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230907 09:55:06.499" endtime="20230907 09:55:11.499"/>
 </kw>
 <kw name="Dashboard page should be visible" library="CMSkeyword">
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Dashboard</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20230907 09:50:23.772" level="INFO">Current page contains text 'Dashboard'.</msg>
-<status status="PASS" starttime="20230907 09:50:23.743" endtime="20230907 09:50:23.772"/>
+<msg timestamp="20230907 09:55:11.526" level="INFO">Current page contains text 'Dashboard'.</msg>
+<status status="PASS" starttime="20230907 09:55:11.500" endtime="20230907 09:55:11.526"/>
 </kw>
-<status status="PASS" starttime="20230907 09:50:23.742" endtime="20230907 09:50:23.772"/>
+<status status="PASS" starttime="20230907 09:55:11.500" endtime="20230907 09:55:11.526"/>
 </kw>
-<status status="PASS" starttime="20230907 09:50:15.448" endtime="20230907 09:50:23.772"/>
+<status status="PASS" starttime="20230907 09:55:03.185" endtime="20230907 09:55:11.526"/>
 </kw>
-<status status="PASS" starttime="20230907 09:50:15.447" endtime="20230907 09:50:23.772"/>
+<status status="PASS" starttime="20230907 09:55:03.184" endtime="20230907 09:55:11.527"/>
 </test>
 <test id="s1-t2" name="Verify login using Browserback Button" line="14">
 <kw name="Sleep" library="BuiltIn">
 <arg>3seconds</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230907 09:50:26.774" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230907 09:50:23.773" endtime="20230907 09:50:26.774"/>
+<msg timestamp="20230907 09:55:14.528" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230907 09:55:11.528" endtime="20230907 09:55:14.528"/>
 </kw>
 <kw name="Browse Back" library="CMSkeyword">
 <kw name="Go Back" library="SeleniumLibrary">
 <doc>Simulates the user clicking the back button on their browser.</doc>
-<status status="PASS" starttime="20230907 09:50:26.775" endtime="20230907 09:50:26.809"/>
+<status status="PASS" starttime="20230907 09:55:14.530" endtime="20230907 09:55:14.585"/>
 </kw>
-<status status="PASS" starttime="20230907 09:50:26.774" endtime="20230907 09:50:26.809"/>
+<status status="PASS" starttime="20230907 09:55:14.529" endtime="20230907 09:55:14.585"/>
 </kw>
-<status status="PASS" starttime="20230907 09:50:23.772" endtime="20230907 09:50:26.809"/>
+<status status="PASS" starttime="20230907 09:55:11.528" endtime="20230907 09:55:14.586"/>
 </test>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230907 09:50:26.810" endtime="20230907 09:50:28.898"/>
+<status status="PASS" starttime="20230907 09:55:14.587" endtime="20230907 09:55:16.761"/>
 </kw>
-<status status="PASS" starttime="20230907 09:50:04.649" endtime="20230907 09:50:28.898"/>
+<status status="PASS" starttime="20230907 09:54:50.503" endtime="20230907 09:55:16.761"/>
 </suite>
 <statistics>
 <total>

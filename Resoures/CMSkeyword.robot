@@ -3,7 +3,7 @@ Library        SeleniumLibrary
 Variables      ../PageObject/Locators.py
 
 *** Variables ***
-${browser}      Firefox
+${browser}      Edge
 ${CMSURL}       https://cms-staging.oneyou.io/auth/login
 ${APP_URL}      https://cms-staging.oneyou.io/dashboard
 ${reserpassword}    https://cms-staging.oneyou.io/auth/reset-password?code=gAAAAABk92C58EBaC1bzOpRXdwboRJzyx7swaLfJBAVujIrFgYqt06VJATbhIz4_Or5dtWypegF_Q60aYYsvgRozBn40u6u7ye9TXxvu9W2erxVXzESfOowM548Tcss1jdK966VFZG28spHuM1uMB-QbA3KhpJMaJMotN3prCFoCPHfdW7p9TH8Yeef-jBgdjZPEwdam9O3tnZ4oV84CuZv8mbuIAl5rSZSHa-hRwt29mvLadzw_6FIqzHRGf24o3YCnwE70OIbq
