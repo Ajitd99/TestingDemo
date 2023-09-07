@@ -1,113 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230907 09:54:50.502" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230907 10:12:18.021" rpa="false" schemaversion="4">
 <suite id="s1" name="1 Verify Login" source="C:\Users\User\PycharmProjects\TestAutomation\CMS1\1_Verify_Login.robot">
 <kw name="Open My Browser" library="CMSkeyword" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${CMSURL}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230907 09:54:50.748" level="INFO">Opening browser 'Edge' to base url 'https://cms-staging.oneyou.io/auth/login'.</msg>
-<status status="PASS" starttime="20230907 09:54:50.748" endtime="20230907 09:55:03.044"/>
+<msg timestamp="20230907 10:12:18.169" level="INFO">Opening browser 'Edge' to base url 'https://cms-staging.oneyou.io/auth/login'.</msg>
+<msg timestamp="20230907 10:12:21.201" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230907 10:12:21.201" level="FAIL">WebDriverException: Message: unknown error: msedge failed to start: crashed.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7EA493DB2+61490]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7EA426002+740642]
+	(No symbol) [0x00007FF7EA1FB8AE]
+	(No symbol) [0x00007FF7EA22CBFE]
+	(No symbol) [0x00007FF7EA227F13]
+	(No symbol) [0x00007FF7EA26B7F8]
+	(No symbol) [0x00007FF7EA2636E3]
+	(No symbol) [0x00007FF7EA235EAA]
+	(No symbol) [0x00007FF7EA23518B]
+	(No symbol) [0x00007FF7EA236634]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF7EA658D69+1207369]
+	(No symbol) [0x00007FF7EA2B5304]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7EA3790F1+32273]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7EA3719E9+1801]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF7EA657944+1202212]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7EA42E998+19784]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7EA42AE54+4612]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7EA42AF86+4918]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7EA41F451+713073]
+	BaseThreadInitThunk [0x00007FFF2DFB257D+29]
+	RtlUserThreadStart [0x00007FFF2E78AA68+40]
+</msg>
+<status status="FAIL" starttime="20230907 10:12:18.169" endtime="20230907 10:12:21.209"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230907 09:55:03.044" endtime="20230907 09:55:03.183"/>
+<status status="NOT RUN" starttime="20230907 10:12:21.209" endtime="20230907 10:12:21.209"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20230907 09:55:03.183" endtime="20230907 09:55:03.184"/>
+<status status="NOT RUN" starttime="20230907 10:12:21.209" endtime="20230907 10:12:21.209"/>
 </kw>
-<status status="PASS" starttime="20230907 09:54:50.748" endtime="20230907 09:55:03.184"/>
+<status status="FAIL" starttime="20230907 10:12:18.169" endtime="20230907 10:12:21.209"/>
 </kw>
 <test id="s1-t1" name="Verify the Login Test with Valid Input" line="9">
-<kw name="Login the Dashboard" library="CMSkeyword">
-<kw name="Sleep" library="BuiltIn">
-<arg>3seconds</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230907 09:55:06.186" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230907 09:55:03.185" endtime="20230907 09:55:06.186"/>
-</kw>
-<kw name="Enter Email" library="CMSkeyword">
-<arg>mahesh.j@amazatic.com</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${txt_Username}</arg>
-<arg>${email}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230907 09:55:06.187" level="INFO">Typing text 'mahesh.j@amazatic.com' into text field 'name:email'.</msg>
-<status status="PASS" starttime="20230907 09:55:06.186" endtime="20230907 09:55:06.324"/>
-</kw>
-<status status="PASS" starttime="20230907 09:55:06.186" endtime="20230907 09:55:06.324"/>
-</kw>
-<kw name="Enter Password" library="CMSkeyword">
-<arg>OneYou@123</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${txt_password}</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230907 09:55:06.325" level="INFO">Typing text 'OneYou@123' into text field 'name:password'.</msg>
-<status status="PASS" starttime="20230907 09:55:06.325" endtime="20230907 09:55:06.423"/>
-</kw>
-<status status="PASS" starttime="20230907 09:55:06.325" endtime="20230907 09:55:06.423"/>
-</kw>
-<kw name="Click on Sign Button" library="CMSkeyword">
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>${submit_button}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230907 09:55:06.424" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
-<status status="PASS" starttime="20230907 09:55:06.424" endtime="20230907 09:55:06.498"/>
-</kw>
-<status status="PASS" starttime="20230907 09:55:06.424" endtime="20230907 09:55:06.499"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>5seconds</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230907 09:55:11.499" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230907 09:55:06.499" endtime="20230907 09:55:11.499"/>
-</kw>
-<kw name="Dashboard page should be visible" library="CMSkeyword">
-<kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>Dashboard</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20230907 09:55:11.526" level="INFO">Current page contains text 'Dashboard'.</msg>
-<status status="PASS" starttime="20230907 09:55:11.500" endtime="20230907 09:55:11.526"/>
-</kw>
-<status status="PASS" starttime="20230907 09:55:11.500" endtime="20230907 09:55:11.526"/>
-</kw>
-<status status="PASS" starttime="20230907 09:55:03.185" endtime="20230907 09:55:11.526"/>
-</kw>
-<status status="PASS" starttime="20230907 09:55:03.184" endtime="20230907 09:55:11.527"/>
+<status status="FAIL" starttime="20230907 10:12:21.209" endtime="20230907 10:12:21.210">Parent suite setup failed:
+WebDriverException: Message: unknown error: msedge failed to start: crashed.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7EA493DB2+61490]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7EA426002+740642]
+	(No symbol) [0x00007FF7EA1FB8AE]
+	(No symbol) [0x00007FF7EA22CBFE]
+	(No symbol) [0x00007FF7EA227F13]
+	(No symbol) [0x00007FF7EA26B7F8]
+	(No symbol) [0x00007FF7EA2636E3]
+	(No symbol) [0x00007FF7EA235EAA]
+	(No symbol) [0x00007FF7EA23518B]
+	(No symbol) [0x00007FF7EA236634]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF7EA658D69+1207369]
+	(No symbol) [0x00007FF7EA2B5304]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7EA3790F1+32273]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7EA3719E9+1801]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF7EA657944+1202212]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7EA42E998+19784]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7EA42AE54+4612]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7EA42AF86+4918]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7EA41F451+713073]
+	BaseThreadInitThunk [0x00007FFF2DFB257D+29]
+	RtlUserThreadStart [0x00007FFF2E78AA68+40]
+</status>
 </test>
 <test id="s1-t2" name="Verify login using Browserback Button" line="14">
-<kw name="Sleep" library="BuiltIn">
-<arg>3seconds</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230907 09:55:14.528" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230907 09:55:11.528" endtime="20230907 09:55:14.528"/>
-</kw>
-<kw name="Browse Back" library="CMSkeyword">
-<kw name="Go Back" library="SeleniumLibrary">
-<doc>Simulates the user clicking the back button on their browser.</doc>
-<status status="PASS" starttime="20230907 09:55:14.530" endtime="20230907 09:55:14.585"/>
-</kw>
-<status status="PASS" starttime="20230907 09:55:14.529" endtime="20230907 09:55:14.585"/>
-</kw>
-<status status="PASS" starttime="20230907 09:55:11.528" endtime="20230907 09:55:14.586"/>
+<status status="FAIL" starttime="20230907 10:12:21.210" endtime="20230907 10:12:21.210">Parent suite setup failed:
+WebDriverException: Message: unknown error: msedge failed to start: crashed.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7EA493DB2+61490]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7EA426002+740642]
+	(No symbol) [0x00007FF7EA1FB8AE]
+	(No symbol) [0x00007FF7EA22CBFE]
+	(No symbol) [0x00007FF7EA227F13]
+	(No symbol) [0x00007FF7EA26B7F8]
+	(No symbol) [0x00007FF7EA2636E3]
+	(No symbol) [0x00007FF7EA235EAA]
+	(No symbol) [0x00007FF7EA23518B]
+	(No symbol) [0x00007FF7EA236634]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF7EA658D69+1207369]
+	(No symbol) [0x00007FF7EA2B5304]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7EA3790F1+32273]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7EA3719E9+1801]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF7EA657944+1202212]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7EA42E998+19784]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7EA42AE54+4612]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7EA42AF86+4918]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7EA41F451+713073]
+	BaseThreadInitThunk [0x00007FFF2DFB257D+29]
+	RtlUserThreadStart [0x00007FFF2E78AA68+40]
+</status>
 </test>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230907 09:55:14.587" endtime="20230907 09:55:16.761"/>
+<status status="PASS" starttime="20230907 10:12:21.211" endtime="20230907 10:12:21.211"/>
 </kw>
-<status status="PASS" starttime="20230907 09:54:50.503" endtime="20230907 09:55:16.761"/>
+<status status="FAIL" starttime="20230907 10:12:18.022" endtime="20230907 10:12:21.211">Suite setup failed:
+WebDriverException: Message: unknown error: msedge failed to start: crashed.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7EA493DB2+61490]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7EA426002+740642]
+	(No symbol) [0x00007FF7EA1FB8AE]
+	(No symbol) [0x00007FF7EA22CBFE]
+	(No symbol) [0x00007FF7EA227F13]
+	(No symbol) [0x00007FF7EA26B7F8]
+	(No symbol) [0x00007FF7EA2636E3]
+	(No symbol) [0x00007FF7EA235EAA]
+	(No symbol) [0x00007FF7EA23518B]
+	(No symbol) [0x00007FF7EA236634]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF7EA658D69+1207369]
+	(No symbol) [0x00007FF7EA2B5304]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7EA3790F1+32273]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7EA3719E9+1801]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF7EA657944+1202212]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7EA42E998+19784]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7EA42AE54+4612]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7EA42AF86+4918]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7EA41F451+713073]
+	BaseThreadInitThunk [0x00007FFF2DFB257D+29]
+	RtlUserThreadStart [0x00007FFF2E78AA68+40]
+</status>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="1 Verify Login">1 Verify Login</stat>
+<stat pass="0" fail="2" skip="0" id="s1" name="1 Verify Login">1 Verify Login</stat>
 </suite>
 </statistics>
 <errors>
