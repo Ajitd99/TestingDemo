@@ -9,8 +9,6 @@ Suite Teardown     Close Browser
 Verify the Login Test with Valid Input
        Login the Dashboard
 
-
-
 Verify login using Browserback Button
        sleep       3seconds
        Browse Back

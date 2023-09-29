@@ -1,15 +1,5 @@
-datasources:f0c79c35a333146751c52df84efeac11fcd57dbb
-commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
+datasources:953ed2ced1359e1122f0ba9607247ab44f5b876d
+commandlineoptions:c87ba746e1d058033db93532a0ae7c6b3bb6e352
 suitesfrom:no-suites-from-option
-file:8cb3cf9ef98c5ee922206218cc6f40ef58f3a2f8
---suite CMS1.1 Verify Login
---suite CMS1.10 Reset Password
---suite CMS1.11 ResetPassword Verify Old Link
---suite CMS1.2 Login Test Invalid Input
---suite CMS1.3 Logout Test
---suite CMS1.4 Verify Forgot Password
---suite CMS1.5 Dashboard Section Verify
---suite CMS1.6 People Section Verify
---suite CMS1.7 Staff Section Verify
---suite CMS1.8 Report Section Verify
---suite CMS1.9 ResetPassword Verify Different Password
+file:08cc507a6990d7028416a6c0df4dabe8a50fd280
+--suite CrossBrowserTest
